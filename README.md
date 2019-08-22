@@ -14,9 +14,10 @@ mount /dev/mmcblk0p1 /mnt
 wget http://archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
 bsdtar -xpf ArchLinuxARM-armv7-latest.tar.gz -C /mnt
 
-
 # SDcard (3)
 sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/mmcblk0 bs=1024 seek=8
 # Change the UUID within custom/boot.cmd and run 
 mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Orange Pi One boot script" -d custom/boot.cmd /mnt/boot/boot.scr
 
+
+# Use aur/qemu-arm-static to install on rootfs (no VM)
