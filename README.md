@@ -29,7 +29,7 @@ mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "h3-dolphin-p1" -d custom
 * SuperR's Kitchen
 
 
-Notes: 
-### Will be removed
-twres/landscape.xml:730: <action function="set">dd if=/etc/env.fex of=/dev/block/nandb</action>				
+ 
+### Notes: Will be removed
+### twres/landscape.xml:730: <action function="set">dd if=/etc/env.fex of=/dev/block/nandb</action>				
 
