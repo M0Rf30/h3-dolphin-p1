@@ -1,0 +1,1686 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 5.1.12-1-ARCH (builduser@leming) (gcc version 8.3.0 (GCC)) #1 SMP PREEMPT Sat Jun 22 20:04:46 UTC 2019
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: sun8iw7p1
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 48 MiB at 0x6d000000
+[    0.000000] On node 0 totalpages: 253952
+[    0.000000]   Normal zone: 1728 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 196608 pages, LIFO batch:63
+[    0.000000]   HighMem zone: 57344 pages, LIFO batch:15
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: Using PSCI v0.1 Function IDs from DT
+[    0.000000] random: get_random_bytes called from start_kernel+0x8c/0x490 with crng_init=0
+[    0.000000] percpu: Embedded 17 pages/cpu s38348 r8192 d23092 u69632
+[    0.000000] pcpu-alloc: s38348 r8192 d23092 u69632 alloc=17*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 252224
+[    0.000000] Kernel command line: console=ttyS0,115200 root=PARTUUID=6be6e786-01 rw rootwait
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 926480K/1015808K available (13312K kernel code, 1100K rwdata, 5264K rodata, 2048K init, 881K bss, 40176K reserved, 49152K cma-reserved, 229364K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000013] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000040] Switching to timer-based delay loop, resolution 41ns
+[    0.000850] Console: colour dummy device 80x30
+[    0.000963] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+[    0.000992] pid_max: default: 32768 minimum: 301
+[    0.001459] LSM: Security Framework initializing
+[    0.001775] Smack:  Initializing.
+[    0.001792] Smack:  IPv6 port labeling enabled.
+[    0.002146] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.002181] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.003565] *** VALIDATE proc ***
+[    0.004229] *** VALIDATE cgroup1 ***
+[    0.004259] *** VALIDATE cgroup2 ***
+[    0.004384] CPU: Testing write buffer coherency: ok
+[    0.005126] /cpus/cpu@0 missing clock-frequency property
+[    0.005178] /cpus/cpu@1 missing clock-frequency property
+[    0.005225] /cpus/cpu@2 missing clock-frequency property
+[    0.005273] /cpus/cpu@3 missing clock-frequency property
+[    0.005300] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.028226] Setting up static identity map for 0x40300000 - 0x403000a0
+[    0.036211] rcu: Hierarchical SRCU implementation.
+[    0.056398] smp: Bringing up secondary CPUs ...
+[    0.099150] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.141525] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.183919] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.184199] smp: Brought up 1 node, 4 CPUs
+[    0.184244] SMP: Total of 4 processors activated (192.00 BogoMIPS).
+[    0.184259] CPU: All CPU(s) started in HYP mode.
+[    0.184272] CPU: Virtualization extensions available.
+[    0.186557] devtmpfs: initialized
+[    0.198611] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.199520] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.199566] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.203661] xor: measuring software checksum speed
+[    0.239988]    arm4regs  :   512.000 MB/sec
+[    0.280148]    8regs     :   355.000 MB/sec
+[    0.320317]    32regs    :   327.000 MB/sec
+[    0.360491]    neon      :   509.000 MB/sec
+[    0.360510] xor: using function: arm4regs (512.000 MB/sec)
+[    0.360664] pinctrl core: initialized pinctrl subsystem
+[    0.364051] NET: Registered protocol family 16
+[    0.369103] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.370814] audit: initializing netlink subsys (disabled)
+[    0.371248] audit: type=2000 audit(0.348:1): state=initialized audit_enabled=0 res=1
+[    0.373964] cpuidle: using governor menu
+[    0.374493] No ATAGs?
+[    0.374775] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.374803] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.377031] Serial: AMBA PL011 UART driver
+[    0.497829] raid6: neonx8   gen()   286 MB/s
+[    0.566176] raid6: neonx8   xor()   239 MB/s
+[    0.634597] raid6: neonx4   gen()   294 MB/s
+[    0.702806] raid6: neonx4   xor()   249 MB/s
+[    0.771315] raid6: neonx2   gen()   268 MB/s
+[    0.839472] raid6: neonx2   xor()   236 MB/s
+[    0.908074] raid6: neonx1   gen()   200 MB/s
+[    0.976092] raid6: neonx1   xor()   188 MB/s
+[    1.044357] raid6: int32x8  gen()    86 MB/s
+[    1.112650] raid6: int32x8  xor()    61 MB/s
+[    1.181426] raid6: int32x4  gen()    94 MB/s
+[    1.249099] raid6: int32x4  xor()    65 MB/s
+[    1.317825] raid6: int32x2  gen()    94 MB/s
+[    1.385958] raid6: int32x2  xor()    70 MB/s
+[    1.454395] raid6: int32x1  gen()    73 MB/s
+[    1.522459] raid6: int32x1  xor()    66 MB/s
+[    1.522477] raid6: using algorithm neonx4 gen() 294 MB/s
+[    1.522492] raid6: .... xor() 249 MB/s, rmw enabled
+[    1.522507] raid6: using neon recovery algorithm
+[    1.536502] vgaarb: loaded
+[    1.538112] SCSI subsystem initialized
+[    1.538653] libata version 3.00 loaded.
+[    1.539118] usbcore: registered new interface driver usbfs
+[    1.539251] usbcore: registered new interface driver hub
+[    1.539466] usbcore: registered new device driver usb
+[    1.541901] media: Linux media interface: v0.10
+[    1.541990] videodev: Linux video capture interface: v2.00
+[    1.542237] pps_core: LinuxPPS API ver. 1 registered
+[    1.542257] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.542309] PTP clock support registered
+[    1.542388] EDAC MC: Ver: 3.0.0
+[    1.544732] Advanced Linux Sound Architecture Driver Initialized.
+[    1.545910] NetLabel: Initializing
+[    1.545931] NetLabel:  domain hash size = 128
+[    1.545945] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.546105] NetLabel:  unlabeled traffic allowed by default
+[    1.546971] clocksource: Switched to clocksource arch_sys_counter
+[    1.547775] VFS: Disk quotas dquot_6.6.0
+[    1.547931] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    1.574185] NET: Registered protocol family 2
+[    1.576003] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    1.576083] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    1.576257] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    1.576540] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.576805] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    1.576901] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    1.577385] NET: Registered protocol family 1
+[    1.582722] RPC: Registered named UNIX socket transport module.
+[    1.582748] RPC: Registered udp transport module.
+[    1.582763] RPC: Registered tcp transport module.
+[    1.582777] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.582807] PCI: CLS 0 bytes, default 64
+[    1.583874] Unpacking initramfs...
+[    2.489843] Freeing initrd memory: 6480K
+[    2.530214] Initialise system trusted keyrings
+[    2.530730] workingset: timestamp_bits=14 max_order=18 bucket_order=4
+[    2.542704] zbud: loaded
+[    2.547296] NFS: Registering the id_resolver key type
+[    2.547407] Key type id_resolver registered
+[    2.547424] Key type id_legacy registered
+[    2.547460] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    3.319419] Key type asymmetric registered
+[    3.319451] Asymmetric key parser 'x509' registered
+[    3.319600] bounce: pool size: 64 pages
+[    3.319725] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    3.320213] io scheduler mq-deadline registered
+[    3.320237] io scheduler kyber registered
+[    3.320604] io scheduler bfq registered
+[    3.325252] sun4i-usb-phy 1c19400.phy: Couldn't request ID GPIO
+[    3.344755] sun8i-h3-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    3.348907] sun8i-h3-r-pinctrl 1f02c00.pinctrl: initialized sunXi PIO driver
+[    3.384837] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[    3.390575] sun8i-h3-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pa not found, using dummy regulator
+[    3.391748] printk: console [ttyS0] disabled
+[    3.412097] 1c28000.serial: ttyS0 at MMIO 0x1c28000 (irq = 42, base_baud = 1500000) is a U6_16550A
+[    4.241531] printk: console [ttyS0] enabled
+[    4.248362] Serial: AMBA driver
+[    4.286475] loop: module loaded
+[    4.292482] Loading iSCSI transport class v2.0-870.
+[    4.298334] iscsi: registered transport (tcp)
+[    4.313355] libphy: Fixed MDIO Bus: probed
+[    4.325466] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    4.332065] ehci-pci: EHCI PCI platform driver
+[    4.336643] ehci-platform: EHCI generic platform driver
+[    4.342423] ehci-platform 1c1a000.usb: EHCI Host Controller
+[    4.348130] ehci-platform 1c1a000.usb: new USB bus registered, assigned bus number 1
+[    4.356818] ehci-platform 1c1a000.usb: irq 28, io mem 0x01c1a000
+[    4.375056] ehci-platform 1c1a000.usb: USB 2.0 started, EHCI 1.00
+[    4.381672] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.01
+[    4.390008] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.397279] usb usb1: Product: EHCI Host Controller
+[    4.402203] usb usb1: Manufacturer: Linux 5.1.12-1-ARCH ehci_hcd
+[    4.408254] usb usb1: SerialNumber: 1c1a000.usb
+[    4.414262] hub 1-0:1.0: USB hub found
+[    4.418166] hub 1-0:1.0: 1 port detected
+[    4.424302] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    4.429932] ehci-omap: OMAP-EHCI Host Controller driver
+[    4.435510] ehci-orion: EHCI orion driver
+[    4.439871] ehci-exynos: EHCI EXYNOS driver
+[    4.444356] tegra-ehci: Tegra EHCI driver
+[    4.448702] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    4.455028] ohci-pci: OHCI PCI platform driver
+[    4.459650] ohci-platform: OHCI generic platform driver
+[    4.465332] ohci-platform 1c1a400.usb: Generic Platform OHCI controller
+[    4.472050] ohci-platform 1c1a400.usb: new USB bus registered, assigned bus number 2
+[    4.480308] ohci-platform 1c1a400.usb: irq 29, io mem 0x01c1a400
+[    4.547455] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.01
+[    4.555785] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.563056] usb usb2: Product: Generic Platform OHCI controller
+[    4.569020] usb usb2: Manufacturer: Linux 5.1.12-1-ARCH ohci_hcd
+[    4.575069] usb usb2: SerialNumber: 1c1a400.usb
+[    4.580901] hub 2-0:1.0: USB hub found
+[    4.584798] hub 2-0:1.0: 1 port detected
+[    4.590838] ohci-exynos: OHCI EXYNOS driver
+[    4.596389] usbcore: registered new interface driver uas
+[    4.601945] usbcore: registered new interface driver usb-storage
+[    4.608074] usbcore: registered new interface driver ums-cypress
+[    4.614206] usbcore: registered new interface driver ums_eneub6250
+[    4.620508] usbcore: registered new interface driver ums-freecom
+[    4.626628] usbcore: registered new interface driver ums-isd200
+[    4.632663] usbcore: registered new interface driver ums-usbat
+[    4.650512] sun6i-rtc 1f00000.rtc: registered as rtc0
+[    4.655652] sun6i-rtc 1f00000.rtc: RTC enabled
+[    4.661345] i2c /dev entries driver
+[    4.666447] sun8i-h3-r-pinctrl 1f02c00.pinctrl: 1f02c00.pinctrl supply vcc-pl not found, using dummy regulator
+[    4.695180] sdhci: Secure Digital Host Controller Interface driver
+[    4.701446] sdhci: Copyright(c) Pierre Ossman
+[    4.707973] Synopsys Designware Multimedia Card Interface Driver
+[    4.715613] VUB300 Driver rom wait states = 1C irqpoll timeout = 0400
+[    4.716694] usbcore: registered new interface driver vub300
+[    4.728924] usbcore: registered new interface driver ushc
+[    4.735411] sun8i-h3-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pf not found, using dummy regulator
+[    4.747064] sunxi-mmc 1c0f000.mmc: Got CD GPIO
+[    4.777344] sunxi-mmc 1c0f000.mmc: initialized, max. request size: 16384 KB
+[    4.784938] sun8i-h3-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pg not found, using dummy regulator
+[    4.796029] sun8i-h3-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pc not found, using dummy regulator
+[    4.831316] sunxi-mmc 1c11000.mmc: initialized, max. request size: 16384 KB
+[    4.840811] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.851604] mmc0: host does not support reading read-only switch, assuming write-enable
+[    4.860085] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[    4.866557] mmc0: error -110 whilst initialising SD card
+[    4.872110] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.879205] hidraw: raw HID events driver (C) Jiri Kosina
+[    4.885421] usbcore: registered new interface driver usbhid
+[    4.891060] usbhid: USB HID core driver
+[    4.905941] NET: Registered protocol family 10
+[    5.010316] Segment Routing with IPv6
+[    5.014307] mip6: Mobile IPv6
+[    5.017434] NET: Registered protocol family 17
+[    5.022556] Key type dns_resolver registered
+[    5.027291] ThumbEE CPU extension supported.
+[    5.031670] Registering SWP/SWPB emulation handler
+[    5.038243] registered taskstats version 1
+[    5.042414] Loading compiled-in X.509 certificates
+[    5.047535] zswap: loaded using pool lzo/zbud
+[    5.056511] Btrfs loaded, crc32c=crc32c-generic
+[    5.088107] sun8i-h3-pinctrl 1c20800.pinctrl: unknown pin PB9
+[    5.096487] sun8i-h3-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pd not found, using dummy regulator
+[    5.108093] simple-framebuffer 7e000000.framebuffer: framebuffer at 0x7e000000, 0x7e9000 bytes, mapped to 0x(ptrval)
+[    5.118690] simple-framebuffer 7e000000.framebuffer: format=x8r8g8b8, mode=1920x1080x32, linelength=7680
+[    5.209394] Console: switching to colour frame buffer device 240x67
+[    5.290614] simple-framebuffer 7e000000.framebuffer: fb0: simplefb registered!
+[    5.298936] sun8i-h3-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pg not found, using dummy regulator
+[    5.313484] ehci-platform 1c1b000.usb: EHCI Host Controller
+[    5.319225] ehci-platform 1c1b000.usb: new USB bus registered, assigned bus number 3
+[    5.328068] ehci-platform 1c1b000.usb: irq 30, io mem 0x01c1b000
+[    5.347050] ehci-platform 1c1b000.usb: USB 2.0 started, EHCI 1.00
+[    5.353675] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.01
+[    5.362008] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.369281] usb usb3: Product: EHCI Host Controller
+[    5.374206] usb usb3: Manufacturer: Linux 5.1.12-1-ARCH ehci_hcd
+[    5.380256] usb usb3: SerialNumber: 1c1b000.usb
+[    5.386153] hub 3-0:1.0: USB hub found
+[    5.390131] hub 3-0:1.0: 1 port detected
+[    5.397667] ehci-platform 1c1c000.usb: EHCI Host Controller
+[    5.403492] ehci-platform 1c1c000.usb: new USB bus registered, assigned bus number 4
+[    5.411837] ehci-platform 1c1c000.usb: irq 32, io mem 0x01c1c000
+[    5.431060] ehci-platform 1c1c000.usb: USB 2.0 started, EHCI 1.00
+[    5.437666] usb usb4: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.01
+[    5.445999] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.453271] usb usb4: Product: EHCI Host Controller
+[    5.458195] usb usb4: Manufacturer: Linux 5.1.12-1-ARCH ehci_hcd
+[    5.464245] usb usb4: SerialNumber: 1c1c000.usb
+[    5.470122] hub 4-0:1.0: USB hub found
+[    5.474084] hub 4-0:1.0: 1 port detected
+[    5.481607] ehci-platform 1c1d000.usb: EHCI Host Controller
+[    5.487426] ehci-platform 1c1d000.usb: new USB bus registered, assigned bus number 5
+[    5.495864] ehci-platform 1c1d000.usb: irq 34, io mem 0x01c1d000
+[    5.515061] ehci-platform 1c1d000.usb: USB 2.0 started, EHCI 1.00
+[    5.521636] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.01
+[    5.529965] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.537246] usb usb5: Product: EHCI Host Controller
+[    5.542173] usb usb5: Manufacturer: Linux 5.1.12-1-ARCH ehci_hcd
+[    5.548224] usb usb5: SerialNumber: 1c1d000.usb
+[    5.554097] hub 5-0:1.0: USB hub found
+[    5.558057] hub 5-0:1.0: 1 port detected
+[    5.565480] ohci-platform 1c1b400.usb: Generic Platform OHCI controller
+[    5.572338] ohci-platform 1c1b400.usb: new USB bus registered, assigned bus number 6
+[    5.581090] ohci-platform 1c1b400.usb: irq 31, io mem 0x01c1b400
+[    5.651486] usb usb6: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.01
+[    5.659816] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.667087] usb usb6: Product: Generic Platform OHCI controller
+[    5.673052] usb usb6: Manufacturer: Linux 5.1.12-1-ARCH ohci_hcd
+[    5.679101] usb usb6: SerialNumber: 1c1b400.usb
+[    5.684959] hub 6-0:1.0: USB hub found
+[    5.688924] hub 6-0:1.0: 1 port detected
+[    5.696456] ohci-platform 1c1c400.usb: Generic Platform OHCI controller
+[    5.703295] ohci-platform 1c1c400.usb: new USB bus registered, assigned bus number 7
+[    5.711867] ohci-platform 1c1c400.usb: irq 33, io mem 0x01c1c400
+[    5.779461] usb usb7: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.01
+[    5.787997] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.795277] usb usb7: Product: Generic Platform OHCI controller
+[    5.801243] usb usb7: Manufacturer: Linux 5.1.12-1-ARCH ohci_hcd
+[    5.807293] usb usb7: SerialNumber: 1c1c400.usb
+[    5.813175] hub 7-0:1.0: USB hub found
+[    5.817146] hub 7-0:1.0: 1 port detected
+[    5.824627] ohci-platform 1c1d400.usb: Generic Platform OHCI controller
+[    5.831462] ohci-platform 1c1d400.usb: new USB bus registered, assigned bus number 8
+[    5.839915] ohci-platform 1c1d400.usb: irq 35, io mem 0x01c1d400
+[    5.847058] usb 4-1: new high-speed USB device number 2 using ehci-platform
+[    5.907465] usb usb8: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.01
+[    5.915981] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.923440] usb usb8: Product: Generic Platform OHCI controller
+[    5.929414] usb usb8: Manufacturer: Linux 5.1.12-1-ARCH ohci_hcd
+[    5.935462] usb usb8: SerialNumber: 1c1d400.usb
+[    5.940522] mmc0: host does not support reading read-only switch, assuming write-enable
+[    5.941343] hub 8-0:1.0: USB hub found
+[    5.948955] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[    5.952503] hub 8-0:1.0: 1 port detected
+[    5.958846] mmc0: error -110 whilst initialising SD card
+[    5.966250] usb_phy_generic usb_phy_generic.0.auto: usb_phy_generic.0.auto supply vcc not found, using dummy regulator
+[    5.980284] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[    5.986220] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 9
+[    5.994650] usb usb9: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.01
+[    6.003053] usb usb9: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    6.010333] usb usb9: Product: MUSB HDRC host driver
+[    6.015346] usb usb9: Manufacturer: Linux 5.1.12-1-ARCH musb-hcd
+[    6.021395] usb usb9: SerialNumber: musb-hdrc.1.auto
+[    6.027889] hub 9-0:1.0: USB hub found
+[    6.031889] hub 9-0:1.0: 1 port detected
+[    6.041526] usb 4-1: New USB device found, idVendor=0951, idProduct=1665, bcdDevice= 2.00
+[    6.049793] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    6.058876] usb 4-1: Product: DataTraveler 2.0
+[    6.063672] usb 4-1: Manufacturer: Kingston
+[    6.067936] usb 4-1: SerialNumber: 1C6F654E4041DDC000003BAD
+[    6.075072] sunxi-mmc 1c10000.mmc: allocated mmc-pwrseq
+[    6.081170] usb-storage 4-1:1.0: USB Mass Storage device detected
+[    6.088472] scsi host0: usb-storage 4-1:1.0
+[    6.243218] sunxi-mmc 1c10000.mmc: initialized, max. request size: 16384 KB
+[    6.254727] input: r_gpio_keys as /devices/platform/r_gpio_keys/input/input0
+[    6.263172] sun6i-rtc 1f00000.rtc: setting system clock to 1970-01-01T00:00:32 UTC (32)
+[    6.272353] vcc3v0: disabling
+[    6.275405] vcc3v3: disabling
+[    6.278386] vcc5v0: disabling
+[    6.281400] usb0-vbus: disabling
+[    6.284672] vcc-wifi: disabling
+[    6.287857] gmac-3v3: disabling
+[    6.291036] ALSA device list:
+[    6.294011]   No soundcards found.
+[    6.303504] Freeing unused kernel memory: 2048K
+[    6.311703] Run /init as init process
+[    6.379121] usb 8-1: new full-speed USB device number 2 using ohci-platform
+[    6.612201] usb 8-1: New USB device found, idVendor=2318, idProduct=2808, bcdDevice= 2.00
+[    6.620495] usb 8-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    6.627716] usb 8-1: Product: 2.4G Composite Devic
+[    6.644655] input: 2.4G Composite Devic as /devices/platform/soc/1c1d400.usb/usb8/8-1/8-1:1.0/0003:2318:2808.0001/input/input1
+[    6.716962] hid-generic 0003:2318:2808.0001: input,hidraw0: USB HID v1.10 Keyboard [2.4G Composite Devic] on usb-1c1d400.usb-1/input0
+[    6.740270] input: 2.4G Composite Devic Mouse as /devices/platform/soc/1c1d400.usb/usb8/8-1/8-1:1.1/0003:2318:2808.0002/input/input2
+[    6.753600] input: 2.4G Composite Devic Consumer Control as /devices/platform/soc/1c1d400.usb/usb8/8-1/8-1:1.1/0003:2318:2808.0002/input/input3
+[    6.823684] input: 2.4G Composite Devic System Control as /devices/platform/soc/1c1d400.usb/usb8/8-1/8-1:1.1/0003:2318:2808.0002/input/input4
+[    6.837061] hid-generic 0003:2318:2808.0002: input,hidraw1: USB HID v1.10 Mouse [2.4G Composite Devic] on usb-1c1d400.usb-1/input1
+[    7.060783] mmc0: host does not support reading read-only switch, assuming write-enable
+[    7.069252] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[    7.075814] mmc0: error -110 whilst initialising SD card
+[    7.097832] scsi 0:0:0:0: Direct-Access     Kingston DataTraveler 2.0 0000 PQ: 0 ANSI: 4
+[    7.110671] sd 0:0:0:0: [sda] 30548032 512-byte logical blocks: (15.6 GB/14.6 GiB)
+[    7.118816] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    7.124353] sd 0:0:0:0: [sda] Write Protect is off
+[    7.129220] sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+[    7.131212] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    7.146697] random: fast init done
+[    7.154830]  sda: sda1
+[    7.171237] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[    8.149873] mmc0: host does not support reading read-only switch, assuming write-enable
+[    8.158611] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[    8.165781] sunxi-mmc 1c0f000.mmc: send stop command failed
+[    8.171487] mmc0: error -110 whilst initialising SD card
+[    9.268563] mmc0: host does not support reading read-only switch, assuming write-enable
+[    9.277015] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[    9.283445] mmc0: error -110 whilst initialising SD card
+[   10.356398] mmc0: host does not support reading read-only switch, assuming write-enable
+[   10.364814] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   10.371202] mmc0: error -110 whilst initialising SD card
+[   10.865374] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[   11.443028] mmc0: host does not support reading read-only switch, assuming write-enable
+[   11.451664] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   11.458103] mmc0: error -110 whilst initialising SD card
+[   11.689728] systemd[1]: System time before build time, advancing clock.
+[   11.822832] systemd[1]: systemd 242.29-2-arch running in system mode. (+PAM +AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[   11.847306] systemd[1]: Detected architecture arm.
+[   11.892866] systemd[1]: Set hostname to <alarm>.
+[   11.912306] systemd[1]: Failed to bump fs.file-max, ignoring: Invalid argument
+[   12.532779] mmc0: host does not support reading read-only switch, assuming write-enable
+[   12.541251] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   12.547700] mmc0: error -110 whilst initialising SD card
+[   13.182807] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.190750] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   13.215497] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.223861] systemd[1]: Listening on udev Control Socket.
+[   13.244222] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.252081] systemd[1]: Listening on Network Service Netlink Socket.
+[   13.272197] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   13.299393] systemd[1]: Reached target Paths.
+[   13.316036] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   13.531717] random: crng init done
+[   13.535147] random: 7 urandom warning(s) missed due to ratelimiting
+[   13.606360] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   13.622846] mmc0: host does not support reading read-only switch, assuming write-enable
+[   13.631545] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   13.638812] sunxi-mmc 1c0f000.mmc: send stop command failed
+[   13.644673] mmc0: error -110 whilst initialising SD card
+[   13.694790] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   13.709519] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[   13.718263] cfg80211: failed to load regulatory.db
+[   13.806244] xradio_wlan: loading out-of-tree module taints kernel.
+[   14.739113] mmc0: host does not support reading read-only switch, assuming write-enable
+[   14.747656] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   14.755047] sunxi-mmc 1c0f000.mmc: send stop command failed
+[   14.760829] mmc0: error -110 whilst initialising SD card
+[   15.232279] audit: type=1130 audit(1561121631.540:2): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   15.420018] audit: type=1130 audit(1561121631.728:3): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   15.452865] audit: type=1130 audit(1561121631.760:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   15.571565] systemd-journald[249]: Received request to flush runtime journal from PID 1
+[   15.863205] mmc0: host does not support reading read-only switch, assuming write-enable
+[   15.871827] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   15.878321] mmc0: error -110 whilst initialising SD card
+[   16.653495] systemd-journald[249]: File /var/log/journal/180cf302aded46ca9cfd0ee71a6bb0e8/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   16.947303] mmc0: host does not support reading read-only switch, assuming write-enable
+[   16.963481] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   16.970740] sunxi-mmc 1c0f000.mmc: send stop command failed
+[   16.976642] mmc0: error -110 whilst initialising SD card
+[   18.067851] mmc0: host does not support reading read-only switch, assuming write-enable
+[   18.076447] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   18.083036] mmc0: error -110 whilst initialising SD card
+[   19.156541] mmc0: host does not support reading read-only switch, assuming write-enable
+[   19.164992] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   19.171422] mmc0: error -110 whilst initialising SD card
+[   20.242738] mmc0: host does not support reading read-only switch, assuming write-enable
+[   20.251180] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   20.257587] mmc0: error -110 whilst initialising SD card
+[   21.332547] mmc0: host does not support reading read-only switch, assuming write-enable
+[   21.341251] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   21.347667] mmc0: error -110 whilst initialising SD card
+[   22.420539] mmc0: host does not support reading read-only switch, assuming write-enable
+[   22.428991] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   22.435391] mmc0: error -110 whilst initialising SD card
+[   23.506763] mmc0: host does not support reading read-only switch, assuming write-enable
+[   23.515275] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   23.521739] mmc0: error -110 whilst initialising SD card
+[   23.840722] sunxi-wdt 1c20ca0.watchdog: Watchdog enabled (timeout=16 sec, nowayout=1)
+[   24.595114] mmc0: host does not support reading read-only switch, assuming write-enable
+[   24.603655] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   24.610085] mmc0: error -110 whilst initialising SD card
+[   25.684574] mmc0: host does not support reading read-only switch, assuming write-enable
+[   25.693033] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   25.699461] mmc0: error -110 whilst initialising SD card
+[   25.839611] sun4i-drm display-engine: bound 1100000.mixer (ops sun8i_mixer_ops [sun8i_mixer])
+[   25.857849] sun4i-drm display-engine: bound 1c0c000.lcd-controller (ops sun4i_tcon_ops [sun4i_tcon])
+[   25.868437] sun8i-dw-hdmi 1ee0000.hdmi: 1ee0000.hdmi supply hvcc not found, using dummy regulator
+[   25.871454] sun8i-dw-hdmi 1ee0000.hdmi: Detected HDMI TX controller v1.32a with HDCP (sun8i_dw_hdmi_phy)
+[   25.892440] sun8i-dw-hdmi 1ee0000.hdmi: registered DesignWare HDMI I2C bus driver
+[   25.907650] sun4i-drm display-engine: bound 1ee0000.hdmi (ops sun8i_dw_hdmi_ops [sun8i_drm_hdmi])
+[   25.909552] audit: type=1130 audit(1561121642.216:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   25.916846] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[   25.943520] [drm] No driver support for vblank timestamp query.
+[   25.949769] checking generic (7e000000 7e9000) vs hw (0 ffffffff)
+[   25.949803] fb0: switching to sun4i-drm-fb from simple
+[   25.955475] Console: switching to colour dummy device 80x30
+[   25.970224] [drm] Initialized sun4i-drm 1.0.0 20150629 for display-engine on minor 0
+[   26.024753] audit: type=1130 audit(1561121642.332:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-networkd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   26.077105] Registered IR keymap rc-empty
+[   26.087068] rc rc0: sunxi-ir as /devices/platform/soc/1f02000.ir/rc/rc0
+[   26.102543] input: sunxi-ir as /devices/platform/soc/1f02000.ir/rc/rc0/input5
+[   26.112110] rc rc0: lirc_dev: driver sunxi-ir registered at minor = 0, raw IR receiver, no transmitter
+[   26.123582] sunxi-ir 1f02000.ir: initialized sunXi IR driver
+[   26.154159] dwmac-sun8i 1c30000.ethernet: PTP uses main clock
+[   26.197938] sun4i-codec 1c22c00.codec: Codec <-> 1c22c00.codec mapping ok
+[   26.275432] mousedev: PS/2 mouse device common for all mice
+[   26.281490] dwmac-sun8i 1c30000.ethernet: Current syscon value is not the default 148006 (expect 58000)
+[   26.292311] dwmac-sun8i 1c30000.ethernet: No HW DMA feature register supported
+[   26.302121] dwmac-sun8i 1c30000.ethernet: RX Checksum Offload Engine supported
+[   26.325207] dwmac-sun8i 1c30000.ethernet: COE Type 2
+[   26.330532] dwmac-sun8i 1c30000.ethernet: TX Checksum insertion supported
+[   26.337625] dwmac-sun8i 1c30000.ethernet: Normal descriptors
+[   26.343741] dwmac-sun8i 1c30000.ethernet: Chain mode enabled
+[   26.344186] libphy: stmmac: probed
+[   26.346022] dwmac-sun8i 1c30000.ethernet: Found internal PHY node
+[   26.346532] libphy: mdio_mux: probed
+[   26.346585] dwmac-sun8i 1c30000.ethernet: Switch mux to internal PHY
+[   26.346609] dwmac-sun8i 1c30000.ethernet: Powering internal PHY
+[   26.378880] libphy: mdio_mux: probed
+[   26.379224] dwmac-sun8i 1c30000.ethernet: Switch mux to external PHY
+[   26.479368] dwmac-sun8i 1c30000.ethernet: EMAC reset timeout
+[   26.479775] dwmac-sun8i 1c30000.ethernet: Error: Failed to register MDIO bus for child /soc/ethernet@1c30000/mdio-mux/mdio@2
+[   26.681447] Console: switching to colour frame buffer device 240x67
+[   26.689713] dwmac-sun8i 1c30000.ethernet eth0: Could not attach to PHY
+[   26.689745] dwmac-sun8i 1c30000.ethernet eth0: stmmac_open: Cannot attach to PHY (error: -19)
+[   26.771141] mmc0: host does not support reading read-only switch, assuming write-enable
+[   26.774057] sun4i-drm display-engine: fb0: DRM emulated frame buffer device
+[   26.777797] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   26.869370] mmc0: error -110 whilst initialising SD card
+[   26.893755] audit: type=1130 audit(1561121643.200:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=lvm2-monitor comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   27.272133] audit: type=1130 audit(1561121643.580:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   27.382131] audit: type=1127 audit(1561121643.688:9): pid=287 uid=0 auid=4294967295 ses=4294967295 subj=_ msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+[   27.513675] audit: type=1130 audit(1561121643.820:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=haveged comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   27.563689] audit: type=1130 audit(1561121643.872:11): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   27.955090] mmc0: host does not support reading read-only switch, assuming write-enable
+[   27.963580] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   27.972703] mmc0: error -110 whilst initialising SD card
+[   28.341606] audit: type=1130 audit(1561121644.648:12): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-timesyncd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   28.539596] audit: type=1130 audit(1561121644.848:13): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   28.711243] audit: type=1130 audit(1561121645.016:14): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-resolved comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   29.046450] mmc0: host does not support reading read-only switch, assuming write-enable
+[   29.055110] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   29.061924] mmc0: error -110 whilst initialising SD card
+[   30.164451] mmc0: host does not support reading read-only switch, assuming write-enable
+[   30.172935] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   30.179417] mmc0: error -110 whilst initialising SD card
+[   31.252571] mmc0: host does not support reading read-only switch, assuming write-enable
+[   31.261032] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   31.267532] mmc0: error -110 whilst initialising SD card
+[   31.941263] kauditd_printk_skb: 5 callbacks suppressed
+[   31.941285] audit: type=1130 audit(1561121648.248:20): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=systemd-adb comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   32.340490] mmc0: host does not support reading read-only switch, assuming write-enable
+[   32.348946] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   32.355378] mmc0: error -110 whilst initialising SD card
+[   33.428887] mmc0: host does not support reading read-only switch, assuming write-enable
+[   33.437619] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   33.444087] mmc0: error -110 whilst initialising SD card
+[   34.516563] mmc0: host does not support reading read-only switch, assuming write-enable
+[   34.525023] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   34.531474] mmc0: error -110 whilst initialising SD card
+[   35.604525] mmc0: host does not support reading read-only switch, assuming write-enable
+[   35.612962] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   35.619381] mmc0: error -110 whilst initialising SD card
+[   36.692514] mmc0: host does not support reading read-only switch, assuming write-enable
+[   36.700965] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   36.707393] mmc0: error -110 whilst initialising SD card
+[   37.780568] mmc0: host does not support reading read-only switch, assuming write-enable
+[   37.789054] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   37.795492] mmc0: error -110 whilst initialising SD card
+[   38.868507] mmc0: host does not support reading read-only switch, assuming write-enable
+[   38.876951] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   38.883395] mmc0: error -110 whilst initialising SD card
+[   39.956500] mmc0: host does not support reading read-only switch, assuming write-enable
+[   39.964941] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   39.971380] mmc0: error -110 whilst initialising SD card
+[   41.044565] mmc0: host does not support reading read-only switch, assuming write-enable
+[   41.053020] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   41.059455] mmc0: error -110 whilst initialising SD card
+[   42.132524] mmc0: host does not support reading read-only switch, assuming write-enable
+[   42.140965] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   42.147391] mmc0: error -110 whilst initialising SD card
+[   43.220523] mmc0: host does not support reading read-only switch, assuming write-enable
+[   43.228963] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   43.235383] mmc0: error -110 whilst initialising SD card
+[   44.308500] mmc0: host does not support reading read-only switch, assuming write-enable
+[   44.316943] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   44.323370] mmc0: error -110 whilst initialising SD card
+[   45.396507] mmc0: host does not support reading read-only switch, assuming write-enable
+[   45.404946] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   45.411377] mmc0: error -110 whilst initialising SD card
+[   46.484498] mmc0: host does not support reading read-only switch, assuming write-enable
+[   46.492940] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   46.499378] mmc0: error -110 whilst initialising SD card
+[   47.572551] mmc0: host does not support reading read-only switch, assuming write-enable
+[   47.581011] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   47.587430] mmc0: error -110 whilst initialising SD card
+[   48.660559] mmc0: host does not support reading read-only switch, assuming write-enable
+[   48.669002] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   48.675430] mmc0: error -110 whilst initialising SD card
+[   49.748545] mmc0: host does not support reading read-only switch, assuming write-enable
+[   49.756990] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   49.763430] mmc0: error -110 whilst initialising SD card
+[   50.836647] mmc0: host does not support reading read-only switch, assuming write-enable
+[   50.845115] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   50.851533] mmc0: error -110 whilst initialising SD card
+[   51.924475] mmc0: host does not support reading read-only switch, assuming write-enable
+[   51.932924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   51.939335] mmc0: error -110 whilst initialising SD card
+[   53.012510] mmc0: host does not support reading read-only switch, assuming write-enable
+[   53.020966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   53.027504] mmc0: error -110 whilst initialising SD card
+[   54.100491] mmc0: host does not support reading read-only switch, assuming write-enable
+[   54.108927] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   54.115399] mmc0: error -110 whilst initialising SD card
+[   55.188506] mmc0: host does not support reading read-only switch, assuming write-enable
+[   55.196946] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   55.203383] mmc0: error -110 whilst initialising SD card
+[   56.276507] mmc0: host does not support reading read-only switch, assuming write-enable
+[   56.284942] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   56.291582] mmc0: error -110 whilst initialising SD card
+[   57.364515] mmc0: host does not support reading read-only switch, assuming write-enable
+[   57.372952] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   57.379400] mmc0: error -110 whilst initialising SD card
+[   58.452509] mmc0: host does not support reading read-only switch, assuming write-enable
+[   58.460958] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   58.467507] mmc0: error -110 whilst initialising SD card
+[   59.540508] mmc0: host does not support reading read-only switch, assuming write-enable
+[   59.548943] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   59.555450] mmc0: error -110 whilst initialising SD card
+[   60.628534] mmc0: host does not support reading read-only switch, assuming write-enable
+[   60.636973] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   60.643585] mmc0: error -110 whilst initialising SD card
+[   61.716542] mmc0: host does not support reading read-only switch, assuming write-enable
+[   61.724984] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   61.731509] mmc0: error -110 whilst initialising SD card
+[   62.804567] mmc0: host does not support reading read-only switch, assuming write-enable
+[   62.813026] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   62.819775] mmc0: error -110 whilst initialising SD card
+[   63.892508] mmc0: host does not support reading read-only switch, assuming write-enable
+[   63.900976] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   63.907546] mmc0: error -110 whilst initialising SD card
+[   64.980514] mmc0: host does not support reading read-only switch, assuming write-enable
+[   64.988953] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   64.995486] mmc0: error -110 whilst initialising SD card
+[   66.068500] mmc0: host does not support reading read-only switch, assuming write-enable
+[   66.076929] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   66.083366] mmc0: error -110 whilst initialising SD card
+[   67.156480] mmc0: host does not support reading read-only switch, assuming write-enable
+[   67.164920] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   67.171379] mmc0: error -110 whilst initialising SD card
+[   68.244545] mmc0: host does not support reading read-only switch, assuming write-enable
+[   68.252984] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   68.260212] mmc0: error -110 whilst initialising SD card
+[   69.332516] mmc0: host does not support reading read-only switch, assuming write-enable
+[   69.340962] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   69.347526] mmc0: error -110 whilst initialising SD card
+[   70.420495] mmc0: host does not support reading read-only switch, assuming write-enable
+[   70.428945] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   70.435479] mmc0: error -110 whilst initialising SD card
+[   71.508491] mmc0: host does not support reading read-only switch, assuming write-enable
+[   71.516927] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   71.523383] mmc0: error -110 whilst initialising SD card
+[   72.596534] mmc0: host does not support reading read-only switch, assuming write-enable
+[   72.604975] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   72.611498] mmc0: error -110 whilst initialising SD card
+[   73.684552] mmc0: host does not support reading read-only switch, assuming write-enable
+[   73.692973] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   73.699401] mmc0: error -110 whilst initialising SD card
+[   74.772497] mmc0: host does not support reading read-only switch, assuming write-enable
+[   74.780939] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   74.787483] mmc0: error -110 whilst initialising SD card
+[   75.860495] mmc0: host does not support reading read-only switch, assuming write-enable
+[   75.868945] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   75.875398] mmc0: error -110 whilst initialising SD card
+[   76.948536] mmc0: host does not support reading read-only switch, assuming write-enable
+[   76.956997] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   76.963550] mmc0: error -110 whilst initialising SD card
+[   78.036567] mmc0: host does not support reading read-only switch, assuming write-enable
+[   78.045010] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   78.052177] mmc0: error -110 whilst initialising SD card
+[   79.124509] mmc0: host does not support reading read-only switch, assuming write-enable
+[   79.132959] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   79.139699] mmc0: error -110 whilst initialising SD card
+[   80.212515] mmc0: host does not support reading read-only switch, assuming write-enable
+[   80.220947] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   80.227441] mmc0: error -110 whilst initialising SD card
+[   81.300523] mmc0: host does not support reading read-only switch, assuming write-enable
+[   81.308965] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   81.315535] mmc0: error -110 whilst initialising SD card
+[   82.388528] mmc0: host does not support reading read-only switch, assuming write-enable
+[   82.396966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   82.403392] mmc0: error -110 whilst initialising SD card
+[   83.476486] mmc0: host does not support reading read-only switch, assuming write-enable
+[   83.484928] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   83.491444] mmc0: error -110 whilst initialising SD card
+[   84.564558] mmc0: host does not support reading read-only switch, assuming write-enable
+[   84.572999] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   84.579474] mmc0: error -110 whilst initialising SD card
+[   85.652504] mmc0: host does not support reading read-only switch, assuming write-enable
+[   85.660957] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   85.667584] mmc0: error -110 whilst initialising SD card
+[   86.740468] mmc0: host does not support reading read-only switch, assuming write-enable
+[   86.748905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   86.755360] mmc0: error -110 whilst initialising SD card
+[   87.828469] mmc0: host does not support reading read-only switch, assuming write-enable
+[   87.836907] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   87.843356] mmc0: error -110 whilst initialising SD card
+[   88.916518] mmc0: host does not support reading read-only switch, assuming write-enable
+[   88.924958] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   88.931506] mmc0: error -110 whilst initialising SD card
+[   90.004509] mmc0: host does not support reading read-only switch, assuming write-enable
+[   90.012983] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   90.019701] mmc0: error -110 whilst initialising SD card
+[   91.092489] mmc0: host does not support reading read-only switch, assuming write-enable
+[   91.100930] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   91.107500] mmc0: error -110 whilst initialising SD card
+[   92.180493] mmc0: host does not support reading read-only switch, assuming write-enable
+[   92.188943] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   92.195506] mmc0: error -110 whilst initialising SD card
+[   93.268524] mmc0: host does not support reading read-only switch, assuming write-enable
+[   93.276966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   93.283513] mmc0: error -110 whilst initialising SD card
+[   94.356511] mmc0: host does not support reading read-only switch, assuming write-enable
+[   94.364957] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   94.371592] mmc0: error -110 whilst initialising SD card
+[   95.444713] mmc0: host does not support reading read-only switch, assuming write-enable
+[   95.453161] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   95.459636] mmc0: error -110 whilst initialising SD card
+[   96.531130] mmc0: host does not support reading read-only switch, assuming write-enable
+[   96.539640] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   96.547570] mmc0: error -110 whilst initialising SD card
+[   97.620504] mmc0: host does not support reading read-only switch, assuming write-enable
+[   97.628944] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   97.635408] mmc0: error -110 whilst initialising SD card
+[   98.708508] mmc0: host does not support reading read-only switch, assuming write-enable
+[   98.716958] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   98.723393] mmc0: error -110 whilst initialising SD card
+[   99.799122] mmc0: host does not support reading read-only switch, assuming write-enable
+[   99.807580] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[   99.815342] mmc0: error -110 whilst initialising SD card
+[  100.916524] mmc0: host does not support reading read-only switch, assuming write-enable
+[  100.924971] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  100.931616] mmc0: error -110 whilst initialising SD card
+[  102.004513] mmc0: host does not support reading read-only switch, assuming write-enable
+[  102.012989] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  102.019778] mmc0: error -110 whilst initialising SD card
+[  103.091734] mmc0: host does not support reading read-only switch, assuming write-enable
+[  103.100186] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  103.107604] mmc0: error -110 whilst initialising SD card
+[  104.180401] mmc0: host does not support reading read-only switch, assuming write-enable
+[  104.189397] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  104.195812] mmc0: error -110 whilst initialising SD card
+[  105.268512] mmc0: host does not support reading read-only switch, assuming write-enable
+[  105.276962] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  105.283574] mmc0: error -110 whilst initialising SD card
+[  106.356508] mmc0: host does not support reading read-only switch, assuming write-enable
+[  106.364950] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  106.371546] mmc0: error -110 whilst initialising SD card
+[  107.444536] mmc0: host does not support reading read-only switch, assuming write-enable
+[  107.452992] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  107.459523] mmc0: error -110 whilst initialising SD card
+[  108.532497] mmc0: host does not support reading read-only switch, assuming write-enable
+[  108.540941] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  108.547570] mmc0: error -110 whilst initialising SD card
+[  109.620507] mmc0: host does not support reading read-only switch, assuming write-enable
+[  109.628950] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  109.635931] mmc0: error -110 whilst initialising SD card
+[  109.754616] audit: type=1131 audit(1561121726.060:21): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  109.861238] audit: type=1130 audit(1561121726.168:22): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  109.881024] audit: type=1131 audit(1561121726.168:23): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  109.900672] audit: type=1130 audit(1561121726.192:24): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  110.708550] mmc0: host does not support reading read-only switch, assuming write-enable
+[  110.717016] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  110.723454] mmc0: error -110 whilst initialising SD card
+[  111.795978] mmc0: host does not support reading read-only switch, assuming write-enable
+[  111.804421] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  111.810868] mmc0: error -110 whilst initialising SD card
+[  112.883169] mmc0: host does not support reading read-only switch, assuming write-enable
+[  112.891615] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  112.898081] mmc0: error -110 whilst initialising SD card
+[  113.972462] mmc0: host does not support reading read-only switch, assuming write-enable
+[  113.980893] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  113.987345] mmc0: error -110 whilst initialising SD card
+[  115.060407] mmc0: host does not support reading read-only switch, assuming write-enable
+[  115.068896] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  115.075332] mmc0: error -110 whilst initialising SD card
+[  116.148492] mmc0: host does not support reading read-only switch, assuming write-enable
+[  116.156978] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  116.163424] mmc0: error -110 whilst initialising SD card
+[  117.236486] mmc0: host does not support reading read-only switch, assuming write-enable
+[  117.244937] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  117.251386] mmc0: error -110 whilst initialising SD card
+[  118.324487] mmc0: host does not support reading read-only switch, assuming write-enable
+[  118.332930] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  118.339353] mmc0: error -110 whilst initialising SD card
+[  119.411076] mmc0: host does not support reading read-only switch, assuming write-enable
+[  119.419513] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  119.425942] mmc0: error -110 whilst initialising SD card
+[  119.624456] audit: type=1006 audit(1561121735.932:25): pid=306 uid=0 subj=_ old-auid=4294967295 auid=0 tty=tty1 old-ses=4294967295 ses=1 res=1
+[  119.912547] audit: type=1130 audit(1561121736.220:26): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=user-runtime-dir@0 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  120.010468] audit: type=1006 audit(1561121736.316:27): pid=308 uid=0 subj=_ old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=2 res=1
+[  120.498930] mmc0: host does not support reading read-only switch, assuming write-enable
+[  120.507477] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  120.513904] mmc0: error -110 whilst initialising SD card
+[  120.694591] audit: type=1130 audit(1561121737.000:28): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=_ msg='unit=user@0 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  121.588537] mmc0: host does not support reading read-only switch, assuming write-enable
+[  121.596999] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  121.603456] mmc0: error -110 whilst initialising SD card
+[  122.676513] mmc0: host does not support reading read-only switch, assuming write-enable
+[  122.684961] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  122.691387] mmc0: error -110 whilst initialising SD card
+[  123.764501] mmc0: host does not support reading read-only switch, assuming write-enable
+[  123.772948] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  123.779377] mmc0: error -110 whilst initialising SD card
+[  124.852497] mmc0: host does not support reading read-only switch, assuming write-enable
+[  124.860947] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  124.867380] mmc0: error -110 whilst initialising SD card
+[  125.940539] mmc0: host does not support reading read-only switch, assuming write-enable
+[  125.948996] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  125.955436] mmc0: error -110 whilst initialising SD card
+[  127.028371] mmc0: host does not support reading read-only switch, assuming write-enable
+[  127.036807] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  127.043226] mmc0: error -110 whilst initialising SD card
+[  128.116398] mmc0: host does not support reading read-only switch, assuming write-enable
+[  128.124842] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  128.131238] mmc0: error -110 whilst initialising SD card
+[  129.204519] mmc0: host does not support reading read-only switch, assuming write-enable
+[  129.212972] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  129.219388] mmc0: error -110 whilst initialising SD card
+[  130.292472] mmc0: host does not support reading read-only switch, assuming write-enable
+[  130.300915] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  130.307376] mmc0: error -110 whilst initialising SD card
+[  131.380481] mmc0: host does not support reading read-only switch, assuming write-enable
+[  131.388929] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  131.395341] mmc0: error -110 whilst initialising SD card
+[  132.468510] mmc0: host does not support reading read-only switch, assuming write-enable
+[  132.476959] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  132.483393] mmc0: error -110 whilst initialising SD card
+[  133.556561] mmc0: host does not support reading read-only switch, assuming write-enable
+[  133.565011] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  133.571430] mmc0: error -110 whilst initialising SD card
+[  134.644565] mmc0: host does not support reading read-only switch, assuming write-enable
+[  134.653049] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  134.659472] mmc0: error -110 whilst initialising SD card
+[  135.732528] mmc0: host does not support reading read-only switch, assuming write-enable
+[  135.741039] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  135.747502] mmc0: error -110 whilst initialising SD card
+[  136.820497] mmc0: host does not support reading read-only switch, assuming write-enable
+[  136.828947] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  136.835358] mmc0: error -110 whilst initialising SD card
+[  137.908478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  137.916928] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  137.923357] mmc0: error -110 whilst initialising SD card
+[  138.996501] mmc0: host does not support reading read-only switch, assuming write-enable
+[  139.004941] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  139.011392] mmc0: error -110 whilst initialising SD card
+[  140.084451] mmc0: host does not support reading read-only switch, assuming write-enable
+[  140.092893] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  140.099313] mmc0: error -110 whilst initialising SD card
+[  141.172435] mmc0: host does not support reading read-only switch, assuming write-enable
+[  141.180930] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  141.187364] mmc0: error -110 whilst initialising SD card
+[  142.260453] mmc0: host does not support reading read-only switch, assuming write-enable
+[  142.268945] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  142.275374] mmc0: error -110 whilst initialising SD card
+[  143.348469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  143.356907] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  143.363356] mmc0: error -110 whilst initialising SD card
+[  144.436476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  144.444914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  144.451341] mmc0: error -110 whilst initialising SD card
+[  145.524464] mmc0: host does not support reading read-only switch, assuming write-enable
+[  145.532899] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  145.539321] mmc0: error -110 whilst initialising SD card
+[  146.612478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  146.620920] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  146.627362] mmc0: error -110 whilst initialising SD card
+[  147.700451] mmc0: host does not support reading read-only switch, assuming write-enable
+[  147.708901] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  147.715306] mmc0: error -110 whilst initialising SD card
+[  148.786843] mmc0: host does not support reading read-only switch, assuming write-enable
+[  148.795360] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  148.801796] mmc0: error -110 whilst initialising SD card
+[  149.876482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  149.884924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  149.891360] mmc0: error -110 whilst initialising SD card
+[  150.964492] mmc0: host does not support reading read-only switch, assuming write-enable
+[  150.972935] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  150.979389] mmc0: error -110 whilst initialising SD card
+[  152.052488] mmc0: host does not support reading read-only switch, assuming write-enable
+[  152.052868] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  152.052926] mmc0: error -110 whilst initialising SD card
+[  153.140480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  153.140860] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  153.140919] mmc0: error -110 whilst initialising SD card
+[  154.228481] mmc0: host does not support reading read-only switch, assuming write-enable
+[  154.228879] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  154.228938] mmc0: error -110 whilst initialising SD card
+[  155.315195] mmc0: host does not support reading read-only switch, assuming write-enable
+[  155.315569] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  155.315624] mmc0: error -110 whilst initialising SD card
+[  156.404444] mmc0: host does not support reading read-only switch, assuming write-enable
+[  156.404814] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  156.404873] mmc0: error -110 whilst initialising SD card
+[  157.492464] mmc0: host does not support reading read-only switch, assuming write-enable
+[  157.492840] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  157.492894] mmc0: error -110 whilst initialising SD card
+[  158.580449] mmc0: host does not support reading read-only switch, assuming write-enable
+[  158.580825] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  158.580880] mmc0: error -110 whilst initialising SD card
+[  159.668444] mmc0: host does not support reading read-only switch, assuming write-enable
+[  159.668822] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  159.668882] mmc0: error -110 whilst initialising SD card
+[  160.756451] mmc0: host does not support reading read-only switch, assuming write-enable
+[  160.756826] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  160.756881] mmc0: error -110 whilst initialising SD card
+[  161.843083] mmc0: host does not support reading read-only switch, assuming write-enable
+[  161.843467] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  161.843530] mmc0: error -110 whilst initialising SD card
+[  162.931420] mmc0: host does not support reading read-only switch, assuming write-enable
+[  162.931797] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  162.931855] mmc0: error -110 whilst initialising SD card
+[  164.020474] mmc0: host does not support reading read-only switch, assuming write-enable
+[  164.020850] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  164.020908] mmc0: error -110 whilst initialising SD card
+[  165.108512] mmc0: host does not support reading read-only switch, assuming write-enable
+[  165.108893] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  165.108952] mmc0: error -110 whilst initialising SD card
+[  166.196500] mmc0: host does not support reading read-only switch, assuming write-enable
+[  166.196875] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  166.196932] mmc0: error -110 whilst initialising SD card
+[  167.284510] mmc0: host does not support reading read-only switch, assuming write-enable
+[  167.284908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  167.284966] mmc0: error -110 whilst initialising SD card
+[  168.372466] mmc0: host does not support reading read-only switch, assuming write-enable
+[  168.372841] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  168.372898] mmc0: error -110 whilst initialising SD card
+[  169.458844] mmc0: host does not support reading read-only switch, assuming write-enable
+[  169.467356] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  169.473819] mmc0: error -110 whilst initialising SD card
+[  170.548509] mmc0: host does not support reading read-only switch, assuming write-enable
+[  170.556997] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  170.563445] mmc0: error -110 whilst initialising SD card
+[  171.636481] mmc0: host does not support reading read-only switch, assuming write-enable
+[  171.644925] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  171.651349] mmc0: error -110 whilst initialising SD card
+[  172.724520] mmc0: host does not support reading read-only switch, assuming write-enable
+[  172.732962] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  172.739389] mmc0: error -110 whilst initialising SD card
+[  173.811175] mmc0: host does not support reading read-only switch, assuming write-enable
+[  173.819624] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  173.826078] mmc0: error -110 whilst initialising SD card
+[  174.900466] mmc0: host does not support reading read-only switch, assuming write-enable
+[  174.908908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  174.915311] mmc0: error -110 whilst initialising SD card
+[  175.988440] mmc0: host does not support reading read-only switch, assuming write-enable
+[  175.996924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  176.003359] mmc0: error -110 whilst initialising SD card
+[  177.074845] mmc0: host does not support reading read-only switch, assuming write-enable
+[  177.083399] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  177.089842] mmc0: error -110 whilst initialising SD card
+[  178.164541] mmc0: host does not support reading read-only switch, assuming write-enable
+[  178.172984] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  178.179434] mmc0: error -110 whilst initialising SD card
+[  179.252481] mmc0: host does not support reading read-only switch, assuming write-enable
+[  179.260924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  179.267328] mmc0: error -110 whilst initialising SD card
+[  180.340471] mmc0: host does not support reading read-only switch, assuming write-enable
+[  180.348927] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  180.355377] mmc0: error -110 whilst initialising SD card
+[  181.428468] mmc0: host does not support reading read-only switch, assuming write-enable
+[  181.436908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  181.443345] mmc0: error -110 whilst initialising SD card
+[  182.516477] mmc0: host does not support reading read-only switch, assuming write-enable
+[  182.524923] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  182.531334] mmc0: error -110 whilst initialising SD card
+[  183.604415] mmc0: host does not support reading read-only switch, assuming write-enable
+[  183.612894] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  183.619348] mmc0: error -110 whilst initialising SD card
+[  184.692472] mmc0: host does not support reading read-only switch, assuming write-enable
+[  184.700912] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  184.707355] mmc0: error -110 whilst initialising SD card
+[  185.780478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  185.788920] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  185.795366] mmc0: error -110 whilst initialising SD card
+[  186.868492] mmc0: host does not support reading read-only switch, assuming write-enable
+[  186.876949] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  186.883411] mmc0: error -110 whilst initialising SD card
+[  187.956480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  187.964923] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  187.971380] mmc0: error -110 whilst initialising SD card
+[  189.044474] mmc0: host does not support reading read-only switch, assuming write-enable
+[  189.052913] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  189.059317] mmc0: error -110 whilst initialising SD card
+[  190.132506] mmc0: host does not support reading read-only switch, assuming write-enable
+[  190.140985] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  190.147407] mmc0: error -110 whilst initialising SD card
+[  191.219803] mmc0: host does not support reading read-only switch, assuming write-enable
+[  191.228249] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  191.234723] mmc0: error -110 whilst initialising SD card
+[  192.308470] mmc0: host does not support reading read-only switch, assuming write-enable
+[  192.316908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  192.323362] mmc0: error -110 whilst initialising SD card
+[  193.396483] mmc0: host does not support reading read-only switch, assuming write-enable
+[  193.404952] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  193.411381] mmc0: error -110 whilst initialising SD card
+[  194.484467] mmc0: host does not support reading read-only switch, assuming write-enable
+[  194.492905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  194.499331] mmc0: error -110 whilst initialising SD card
+[  195.572491] mmc0: host does not support reading read-only switch, assuming write-enable
+[  195.580934] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  195.587360] mmc0: error -110 whilst initialising SD card
+[  196.659804] mmc0: host does not support reading read-only switch, assuming write-enable
+[  196.668247] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  196.674692] mmc0: error -110 whilst initialising SD card
+[  197.748518] mmc0: host does not support reading read-only switch, assuming write-enable
+[  197.757007] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  197.763452] mmc0: error -110 whilst initialising SD card
+[  198.842795] mmc0: host does not support reading read-only switch, assuming write-enable
+[  198.843174] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  198.843244] mmc0: error -110 whilst initialising SD card
+[  199.924526] mmc0: host does not support reading read-only switch, assuming write-enable
+[  199.932978] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  199.939437] mmc0: error -110 whilst initialising SD card
+[  201.012478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  201.020919] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  201.027364] mmc0: error -110 whilst initialising SD card
+[  202.100516] mmc0: host does not support reading read-only switch, assuming write-enable
+[  202.108966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  202.115425] mmc0: error -110 whilst initialising SD card
+[  203.188494] mmc0: host does not support reading read-only switch, assuming write-enable
+[  203.196949] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  203.203365] mmc0: error -110 whilst initialising SD card
+[  204.275141] mmc0: host does not support reading read-only switch, assuming write-enable
+[  204.283571] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  204.289989] mmc0: error -110 whilst initialising SD card
+[  205.364432] mmc0: host does not support reading read-only switch, assuming write-enable
+[  205.372875] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  205.379298] mmc0: error -110 whilst initialising SD card
+[  206.452479] mmc0: host does not support reading read-only switch, assuming write-enable
+[  206.460952] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  206.467383] mmc0: error -110 whilst initialising SD card
+[  207.540482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  207.548931] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  207.555358] mmc0: error -110 whilst initialising SD card
+[  208.628482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  208.636925] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  208.643376] mmc0: error -110 whilst initialising SD card
+[  209.716493] mmc0: host does not support reading read-only switch, assuming write-enable
+[  209.724942] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  209.731355] mmc0: error -110 whilst initialising SD card
+[  210.803186] mmc0: host does not support reading read-only switch, assuming write-enable
+[  210.811633] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  210.818077] mmc0: error -110 whilst initialising SD card
+[  211.892425] mmc0: host does not support reading read-only switch, assuming write-enable
+[  211.900864] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  211.907281] mmc0: error -110 whilst initialising SD card
+[  212.980490] mmc0: host does not support reading read-only switch, assuming write-enable
+[  212.988930] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  212.995382] mmc0: error -110 whilst initialising SD card
+[  214.068471] mmc0: host does not support reading read-only switch, assuming write-enable
+[  214.076915] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  214.083375] mmc0: error -110 whilst initialising SD card
+[  215.156487] mmc0: host does not support reading read-only switch, assuming write-enable
+[  215.164934] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  215.171346] mmc0: error -110 whilst initialising SD card
+[  216.244500] mmc0: host does not support reading read-only switch, assuming write-enable
+[  216.252938] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  216.259396] mmc0: error -110 whilst initialising SD card
+[  217.332476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  217.340914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  217.347316] mmc0: error -110 whilst initialising SD card
+[  218.418838] mmc0: host does not support reading read-only switch, assuming write-enable
+[  218.427358] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  218.433791] mmc0: error -110 whilst initialising SD card
+[  219.508419] mmc0: host does not support reading read-only switch, assuming write-enable
+[  219.516924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  219.523330] mmc0: error -110 whilst initialising SD card
+[  220.596488] mmc0: host does not support reading read-only switch, assuming write-enable
+[  220.604929] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  220.611333] mmc0: error -110 whilst initialising SD card
+[  221.684505] mmc0: host does not support reading read-only switch, assuming write-enable
+[  221.692957] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  221.699365] mmc0: error -110 whilst initialising SD card
+[  222.772497] mmc0: host does not support reading read-only switch, assuming write-enable
+[  222.780948] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  222.787379] mmc0: error -110 whilst initialising SD card
+[  223.860478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  223.868918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  223.875325] mmc0: error -110 whilst initialising SD card
+[  224.948379] mmc0: host does not support reading read-only switch, assuming write-enable
+[  224.956865] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  224.963274] mmc0: error -110 whilst initialising SD card
+[  226.034847] mmc0: host does not support reading read-only switch, assuming write-enable
+[  226.043335] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  226.049780] mmc0: error -110 whilst initialising SD card
+[  227.124499] mmc0: host does not support reading read-only switch, assuming write-enable
+[  227.132939] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  227.139573] mmc0: error -110 whilst initialising SD card
+[  228.212521] mmc0: host does not support reading read-only switch, assuming write-enable
+[  228.220962] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  228.227748] mmc0: error -110 whilst initialising SD card
+[  229.300550] mmc0: host does not support reading read-only switch, assuming write-enable
+[  229.308997] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  229.315698] mmc0: error -110 whilst initialising SD card
+[  230.388548] mmc0: host does not support reading read-only switch, assuming write-enable
+[  230.396995] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  230.403715] mmc0: error -110 whilst initialising SD card
+[  231.476530] mmc0: host does not support reading read-only switch, assuming write-enable
+[  231.484972] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  231.491550] mmc0: error -110 whilst initialising SD card
+[  232.564415] mmc0: host does not support reading read-only switch, assuming write-enable
+[  232.572920] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  232.579454] mmc0: error -110 whilst initialising SD card
+[  233.652503] mmc0: host does not support reading read-only switch, assuming write-enable
+[  233.660942] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  233.667583] mmc0: error -110 whilst initialising SD card
+[  234.740501] mmc0: host does not support reading read-only switch, assuming write-enable
+[  234.748955] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  234.755475] mmc0: error -110 whilst initialising SD card
+[  235.828491] mmc0: host does not support reading read-only switch, assuming write-enable
+[  235.836943] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  235.843637] mmc0: error -110 whilst initialising SD card
+[  236.916569] mmc0: host does not support reading read-only switch, assuming write-enable
+[  236.925024] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  236.931962] mmc0: error -110 whilst initialising SD card
+[  238.004499] mmc0: host does not support reading read-only switch, assuming write-enable
+[  238.012955] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  238.019702] mmc0: error -110 whilst initialising SD card
+[  239.092539] mmc0: host does not support reading read-only switch, assuming write-enable
+[  239.101029] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  239.107518] mmc0: error -110 whilst initialising SD card
+[  240.179832] mmc0: host does not support reading read-only switch, assuming write-enable
+[  240.188266] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  240.195563] mmc0: error -110 whilst initialising SD card
+[  241.268557] mmc0: host does not support reading read-only switch, assuming write-enable
+[  241.277003] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  241.283748] mmc0: error -110 whilst initialising SD card
+[  242.356535] mmc0: host does not support reading read-only switch, assuming write-enable
+[  242.364979] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  242.371641] mmc0: error -110 whilst initialising SD card
+[  243.444492] mmc0: host does not support reading read-only switch, assuming write-enable
+[  243.452943] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  243.459665] mmc0: error -110 whilst initialising SD card
+[  244.532537] mmc0: host does not support reading read-only switch, assuming write-enable
+[  244.540987] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  244.547720] mmc0: error -110 whilst initialising SD card
+[  245.619869] mmc0: host does not support reading read-only switch, assuming write-enable
+[  245.628332] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  245.651089] mmc0: error -110 whilst initialising SD card
+[  246.740471] mmc0: host does not support reading read-only switch, assuming write-enable
+[  246.748981] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  246.755756] mmc0: error -110 whilst initialising SD card
+[  247.828549] mmc0: host does not support reading read-only switch, assuming write-enable
+[  247.836998] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  247.843818] mmc0: error -110 whilst initialising SD card
+[  248.916541] mmc0: host does not support reading read-only switch, assuming write-enable
+[  248.925000] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  248.931774] mmc0: error -110 whilst initialising SD card
+[  250.004506] mmc0: host does not support reading read-only switch, assuming write-enable
+[  250.012948] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  250.019733] mmc0: error -110 whilst initialising SD card
+[  251.092496] mmc0: host does not support reading read-only switch, assuming write-enable
+[  251.100938] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  251.107541] mmc0: error -110 whilst initialising SD card
+[  252.180520] mmc0: host does not support reading read-only switch, assuming write-enable
+[  252.188963] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  252.196192] mmc0: error -110 whilst initialising SD card
+[  253.268500] mmc0: host does not support reading read-only switch, assuming write-enable
+[  253.276984] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  253.283876] mmc0: error -110 whilst initialising SD card
+[  254.356536] mmc0: host does not support reading read-only switch, assuming write-enable
+[  254.365022] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  254.371450] mmc0: error -110 whilst initialising SD card
+[  255.444472] mmc0: host does not support reading read-only switch, assuming write-enable
+[  255.452908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  255.459356] mmc0: error -110 whilst initialising SD card
+[  256.532527] mmc0: host does not support reading read-only switch, assuming write-enable
+[  256.540966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  256.547396] mmc0: error -110 whilst initialising SD card
+[  257.620533] mmc0: host does not support reading read-only switch, assuming write-enable
+[  257.628997] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  257.635424] mmc0: error -110 whilst initialising SD card
+[  258.708500] mmc0: host does not support reading read-only switch, assuming write-enable
+[  258.716938] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  258.723375] mmc0: error -110 whilst initialising SD card
+[  259.796517] mmc0: host does not support reading read-only switch, assuming write-enable
+[  259.804964] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  259.811374] mmc0: error -110 whilst initialising SD card
+[  260.884545] mmc0: host does not support reading read-only switch, assuming write-enable
+[  260.893034] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  260.899465] mmc0: error -110 whilst initialising SD card
+[  261.972538] mmc0: host does not support reading read-only switch, assuming write-enable
+[  261.980989] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  261.987415] mmc0: error -110 whilst initialising SD card
+[  263.063129] mmc0: host does not support reading read-only switch, assuming write-enable
+[  263.071778] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  263.078256] mmc0: error -110 whilst initialising SD card
+[  264.148503] mmc0: host does not support reading read-only switch, assuming write-enable
+[  264.156990] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  264.163417] mmc0: error -110 whilst initialising SD card
+[  265.236489] mmc0: host does not support reading read-only switch, assuming write-enable
+[  265.244938] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  265.251367] mmc0: error -110 whilst initialising SD card
+[  266.324475] mmc0: host does not support reading read-only switch, assuming write-enable
+[  266.332916] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  266.339331] mmc0: error -110 whilst initialising SD card
+[  267.411777] mmc0: host does not support reading read-only switch, assuming write-enable
+[  267.420207] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  267.426638] mmc0: error -110 whilst initialising SD card
+[  268.499190] mmc0: host does not support reading read-only switch, assuming write-enable
+[  268.507622] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  268.514044] mmc0: error -110 whilst initialising SD card
+[  269.588509] mmc0: host does not support reading read-only switch, assuming write-enable
+[  269.596958] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  269.603426] mmc0: error -110 whilst initialising SD card
+[  270.676498] mmc0: host does not support reading read-only switch, assuming write-enable
+[  270.684971] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  270.691402] mmc0: error -110 whilst initialising SD card
+[  271.764469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  271.772911] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  271.779338] mmc0: error -110 whilst initialising SD card
+[  272.852490] mmc0: host does not support reading read-only switch, assuming write-enable
+[  272.860936] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  272.867527] mmc0: error -110 whilst initialising SD card
+[  273.939185] mmc0: host does not support reading read-only switch, assuming write-enable
+[  273.947634] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  273.954073] mmc0: error -110 whilst initialising SD card
+[  275.027813] mmc0: host does not support reading read-only switch, assuming write-enable
+[  275.036253] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  275.042694] mmc0: error -110 whilst initialising SD card
+[  276.116485] mmc0: host does not support reading read-only switch, assuming write-enable
+[  276.124924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  276.131334] mmc0: error -110 whilst initialising SD card
+[  277.204473] mmc0: host does not support reading read-only switch, assuming write-enable
+[  277.212917] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  277.219371] mmc0: error -110 whilst initialising SD card
+[  278.292477] mmc0: host does not support reading read-only switch, assuming write-enable
+[  278.300913] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  278.307329] mmc0: error -110 whilst initialising SD card
+[  279.380489] mmc0: host does not support reading read-only switch, assuming write-enable
+[  279.388934] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  279.395371] mmc0: error -110 whilst initialising SD card
+[  280.468480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  280.476918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  280.483352] mmc0: error -110 whilst initialising SD card
+[  281.556447] mmc0: host does not support reading read-only switch, assuming write-enable
+[  281.564877] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  281.571346] mmc0: error -110 whilst initialising SD card
+[  282.644449] mmc0: host does not support reading read-only switch, assuming write-enable
+[  282.652882] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  282.659319] mmc0: error -110 whilst initialising SD card
+[  283.732469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  283.740918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  283.747369] mmc0: error -110 whilst initialising SD card
+[  284.820470] mmc0: host does not support reading read-only switch, assuming write-enable
+[  284.828905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  284.835340] mmc0: error -110 whilst initialising SD card
+[  285.908480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  285.916926] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  285.923383] mmc0: error -110 whilst initialising SD card
+[  286.996499] mmc0: host does not support reading read-only switch, assuming write-enable
+[  287.004954] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  287.011421] mmc0: error -110 whilst initialising SD card
+[  288.084464] mmc0: host does not support reading read-only switch, assuming write-enable
+[  288.092904] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  288.099360] mmc0: error -110 whilst initialising SD card
+[  289.172482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  289.180922] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  289.187364] mmc0: error -110 whilst initialising SD card
+[  290.260439] mmc0: host does not support reading read-only switch, assuming write-enable
+[  290.268874] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  290.275302] mmc0: error -110 whilst initialising SD card
+[  291.348463] mmc0: host does not support reading read-only switch, assuming write-enable
+[  291.356895] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  291.363389] mmc0: error -110 whilst initialising SD card
+[  292.436477] mmc0: host does not support reading read-only switch, assuming write-enable
+[  292.444915] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  292.451354] mmc0: error -110 whilst initialising SD card
+[  293.524477] mmc0: host does not support reading read-only switch, assuming write-enable
+[  293.532921] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  293.539372] mmc0: error -110 whilst initialising SD card
+[  294.612469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  294.620907] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  294.627352] mmc0: error -110 whilst initialising SD card
+[  295.700493] mmc0: host does not support reading read-only switch, assuming write-enable
+[  295.708928] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  295.715367] mmc0: error -110 whilst initialising SD card
+[  296.788476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  296.796939] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  296.803370] mmc0: error -110 whilst initialising SD card
+[  297.876458] mmc0: host does not support reading read-only switch, assuming write-enable
+[  297.884884] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  297.891315] mmc0: error -110 whilst initialising SD card
+[  298.964471] mmc0: host does not support reading read-only switch, assuming write-enable
+[  298.972909] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  298.979377] mmc0: error -110 whilst initialising SD card
+[  300.052481] mmc0: host does not support reading read-only switch, assuming write-enable
+[  300.060914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  300.067373] mmc0: error -110 whilst initialising SD card
+[  301.140461] mmc0: host does not support reading read-only switch, assuming write-enable
+[  301.148895] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  301.155366] mmc0: error -110 whilst initialising SD card
+[  302.228473] mmc0: host does not support reading read-only switch, assuming write-enable
+[  302.236911] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  302.243377] mmc0: error -110 whilst initialising SD card
+[  303.316482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  303.324916] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  303.331356] mmc0: error -110 whilst initialising SD card
+[  304.404449] mmc0: host does not support reading read-only switch, assuming write-enable
+[  304.412890] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  304.419330] mmc0: error -110 whilst initialising SD card
+[  305.492464] mmc0: host does not support reading read-only switch, assuming write-enable
+[  305.500895] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  305.507357] mmc0: error -110 whilst initialising SD card
+[  306.580460] mmc0: host does not support reading read-only switch, assuming write-enable
+[  306.588897] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  306.595344] mmc0: error -110 whilst initialising SD card
+[  307.668483] mmc0: host does not support reading read-only switch, assuming write-enable
+[  307.676914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  307.683360] mmc0: error -110 whilst initialising SD card
+[  308.756480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  308.764919] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  308.771371] mmc0: error -110 whilst initialising SD card
+[  309.844485] mmc0: host does not support reading read-only switch, assuming write-enable
+[  309.852953] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  309.859386] mmc0: error -110 whilst initialising SD card
+[  310.932450] mmc0: host does not support reading read-only switch, assuming write-enable
+[  310.940885] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  310.947316] mmc0: error -110 whilst initialising SD card
+[  312.020467] mmc0: host does not support reading read-only switch, assuming write-enable
+[  312.028905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  312.035330] mmc0: error -110 whilst initialising SD card
+[  313.108475] mmc0: host does not support reading read-only switch, assuming write-enable
+[  313.116918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  313.123384] mmc0: error -110 whilst initialising SD card
+[  314.196478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  314.204918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  314.211349] mmc0: error -110 whilst initialising SD card
+[  315.284479] mmc0: host does not support reading read-only switch, assuming write-enable
+[  315.292926] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  315.299374] mmc0: error -110 whilst initialising SD card
+[  316.372511] mmc0: host does not support reading read-only switch, assuming write-enable
+[  316.380959] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  316.387422] mmc0: error -110 whilst initialising SD card
+[  317.459037] mmc0: host does not support reading read-only switch, assuming write-enable
+[  317.467485] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  317.473923] mmc0: error -110 whilst initialising SD card
+[  318.548480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  318.556915] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  318.563353] mmc0: error -110 whilst initialising SD card
+[  319.636481] mmc0: host does not support reading read-only switch, assuming write-enable
+[  319.644922] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  319.651379] mmc0: error -110 whilst initialising SD card
+[  320.724511] mmc0: host does not support reading read-only switch, assuming write-enable
+[  320.732967] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  320.739411] mmc0: error -110 whilst initialising SD card
+[  321.812495] mmc0: host does not support reading read-only switch, assuming write-enable
+[  321.820937] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  321.827411] mmc0: error -110 whilst initialising SD card
+[  322.900475] mmc0: host does not support reading read-only switch, assuming write-enable
+[  322.908938] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  322.915372] mmc0: error -110 whilst initialising SD card
+[  323.988471] mmc0: host does not support reading read-only switch, assuming write-enable
+[  323.996908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  324.003365] mmc0: error -110 whilst initialising SD card
+[  325.076431] mmc0: host does not support reading read-only switch, assuming write-enable
+[  325.084877] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  325.091333] mmc0: error -110 whilst initialising SD card
+[  326.164435] mmc0: host does not support reading read-only switch, assuming write-enable
+[  326.172869] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  326.179272] mmc0: error -110 whilst initialising SD card
+[  327.252468] mmc0: host does not support reading read-only switch, assuming write-enable
+[  327.260910] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  327.267371] mmc0: error -110 whilst initialising SD card
+[  328.340482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  328.348925] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  328.355390] mmc0: error -110 whilst initialising SD card
+[  329.428474] mmc0: host does not support reading read-only switch, assuming write-enable
+[  329.436922] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  329.443363] mmc0: error -110 whilst initialising SD card
+[  330.516452] mmc0: host does not support reading read-only switch, assuming write-enable
+[  330.524896] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  330.531326] mmc0: error -110 whilst initialising SD card
+[  331.604417] mmc0: host does not support reading read-only switch, assuming write-enable
+[  331.612854] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  331.619290] mmc0: error -110 whilst initialising SD card
+[  332.692442] mmc0: host does not support reading read-only switch, assuming write-enable
+[  332.700874] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  332.707300] mmc0: error -110 whilst initialising SD card
+[  333.780469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  333.788913] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  333.795339] mmc0: error -110 whilst initialising SD card
+[  334.868479] mmc0: host does not support reading read-only switch, assuming write-enable
+[  334.876919] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  334.883344] mmc0: error -110 whilst initialising SD card
+[  335.956452] mmc0: host does not support reading read-only switch, assuming write-enable
+[  335.964907] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  335.971325] mmc0: error -110 whilst initialising SD card
+[  337.044461] mmc0: host does not support reading read-only switch, assuming write-enable
+[  337.052903] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  337.059315] mmc0: error -110 whilst initialising SD card
+[  338.132457] mmc0: host does not support reading read-only switch, assuming write-enable
+[  338.140900] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  338.147357] mmc0: error -110 whilst initialising SD card
+[  339.218835] mmc0: host does not support reading read-only switch, assuming write-enable
+[  339.227371] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  339.233829] mmc0: error -110 whilst initialising SD card
+[  340.308537] mmc0: host does not support reading read-only switch, assuming write-enable
+[  340.317027] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  340.323482] mmc0: error -110 whilst initialising SD card
+[  341.396466] mmc0: host does not support reading read-only switch, assuming write-enable
+[  341.404905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  341.411332] mmc0: error -110 whilst initialising SD card
+[  342.484468] mmc0: host does not support reading read-only switch, assuming write-enable
+[  342.492910] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  342.499356] mmc0: error -110 whilst initialising SD card
+[  343.572453] mmc0: host does not support reading read-only switch, assuming write-enable
+[  343.580893] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  343.587333] mmc0: error -110 whilst initialising SD card
+[  344.660485] mmc0: host does not support reading read-only switch, assuming write-enable
+[  344.668937] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  344.675344] mmc0: error -110 whilst initialising SD card
+[  345.747177] mmc0: host does not support reading read-only switch, assuming write-enable
+[  345.755609] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  345.762077] mmc0: error -110 whilst initialising SD card
+[  346.836446] mmc0: host does not support reading read-only switch, assuming write-enable
+[  346.844888] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  346.851310] mmc0: error -110 whilst initialising SD card
+[  347.924449] mmc0: host does not support reading read-only switch, assuming write-enable
+[  347.932880] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  347.939351] mmc0: error -110 whilst initialising SD card
+[  349.012486] mmc0: host does not support reading read-only switch, assuming write-enable
+[  349.020950] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  349.027404] mmc0: error -110 whilst initialising SD card
+[  350.100482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  350.108930] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  350.115412] mmc0: error -110 whilst initialising SD card
+[  351.188490] mmc0: host does not support reading read-only switch, assuming write-enable
+[  351.196939] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  351.203401] mmc0: error -110 whilst initialising SD card
+[  352.276476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  352.284908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  352.291363] mmc0: error -110 whilst initialising SD card
+[  353.364419] mmc0: host does not support reading read-only switch, assuming write-enable
+[  353.372864] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  353.379311] mmc0: error -110 whilst initialising SD card
+[  354.452441] mmc0: host does not support reading read-only switch, assuming write-enable
+[  354.460894] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  354.460960] mmc0: error -110 whilst initialising SD card
+[  355.540494] mmc0: host does not support reading read-only switch, assuming write-enable
+[  355.548946] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  355.555383] mmc0: error -110 whilst initialising SD card
+[  356.628476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  356.636916] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  356.643361] mmc0: error -110 whilst initialising SD card
+[  357.714806] mmc0: host does not support reading read-only switch, assuming write-enable
+[  357.715202] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  357.715278] mmc0: error -110 whilst initialising SD card
+[  358.804527] mmc0: host does not support reading read-only switch, assuming write-enable
+[  358.812979] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  358.819410] mmc0: error -110 whilst initialising SD card
+[  359.892430] mmc0: host does not support reading read-only switch, assuming write-enable
+[  359.900866] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  359.907352] mmc0: error -110 whilst initialising SD card
+[  360.980438] mmc0: host does not support reading read-only switch, assuming write-enable
+[  360.988873] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  360.995297] mmc0: error -110 whilst initialising SD card
+[  362.068466] mmc0: host does not support reading read-only switch, assuming write-enable
+[  362.076916] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  362.083385] mmc0: error -110 whilst initialising SD card
+[  363.156477] mmc0: host does not support reading read-only switch, assuming write-enable
+[  363.164919] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  363.171378] mmc0: error -110 whilst initialising SD card
+[  364.244467] mmc0: host does not support reading read-only switch, assuming write-enable
+[  364.252900] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  364.259355] mmc0: error -110 whilst initialising SD card
+[  365.332464] mmc0: host does not support reading read-only switch, assuming write-enable
+[  365.340904] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  365.347375] mmc0: error -110 whilst initialising SD card
+[  366.420453] mmc0: host does not support reading read-only switch, assuming write-enable
+[  366.428894] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  366.435334] mmc0: error -110 whilst initialising SD card
+[  367.508451] mmc0: host does not support reading read-only switch, assuming write-enable
+[  367.516884] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  367.523463] mmc0: error -110 whilst initialising SD card
+[  368.596482] mmc0: host does not support reading read-only switch, assuming write-enable
+[  368.604917] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  368.611482] mmc0: error -110 whilst initialising SD card
+[  369.684523] mmc0: host does not support reading read-only switch, assuming write-enable
+[  369.692983] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  369.699682] mmc0: error -110 whilst initialising SD card
+[  370.772504] mmc0: host does not support reading read-only switch, assuming write-enable
+[  370.780946] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  370.787497] mmc0: error -110 whilst initialising SD card
+[  371.860520] mmc0: host does not support reading read-only switch, assuming write-enable
+[  371.868967] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  371.875715] mmc0: error -110 whilst initialising SD card
+[  372.948496] mmc0: host does not support reading read-only switch, assuming write-enable
+[  372.956932] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  372.963537] mmc0: error -110 whilst initialising SD card
+[  374.036466] mmc0: host does not support reading read-only switch, assuming write-enable
+[  374.044914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  374.051418] mmc0: error -110 whilst initialising SD card
+[  375.124501] mmc0: host does not support reading read-only switch, assuming write-enable
+[  375.132971] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  375.140603] mmc0: error -110 whilst initialising SD card
+[  376.212531] mmc0: host does not support reading read-only switch, assuming write-enable
+[  376.220974] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  376.227495] mmc0: error -110 whilst initialising SD card
+[  377.300477] mmc0: host does not support reading read-only switch, assuming write-enable
+[  377.308917] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  377.315730] mmc0: error -110 whilst initialising SD card
+[  378.388495] mmc0: host does not support reading read-only switch, assuming write-enable
+[  378.396934] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  378.403490] mmc0: error -110 whilst initialising SD card
+[  379.476486] mmc0: host does not support reading read-only switch, assuming write-enable
+[  379.484925] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  379.491539] mmc0: error -110 whilst initialising SD card
+[  380.564536] mmc0: host does not support reading read-only switch, assuming write-enable
+[  380.572970] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  380.579575] mmc0: error -110 whilst initialising SD card
+[  381.652509] mmc0: host does not support reading read-only switch, assuming write-enable
+[  381.660942] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  381.667510] mmc0: error -110 whilst initialising SD card
+[  382.740538] mmc0: host does not support reading read-only switch, assuming write-enable
+[  382.748966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  382.755446] mmc0: error -110 whilst initialising SD card
+[  383.828499] mmc0: host does not support reading read-only switch, assuming write-enable
+[  383.836938] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  383.843609] mmc0: error -110 whilst initialising SD card
+[  384.916560] mmc0: host does not support reading read-only switch, assuming write-enable
+[  384.925003] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  384.931424] mmc0: error -110 whilst initialising SD card
+[  386.004549] mmc0: host does not support reading read-only switch, assuming write-enable
+[  386.012992] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  386.019556] mmc0: error -110 whilst initialising SD card
+[  387.092539] mmc0: host does not support reading read-only switch, assuming write-enable
+[  387.100979] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  387.107712] mmc0: error -110 whilst initialising SD card
+[  388.180463] mmc0: host does not support reading read-only switch, assuming write-enable
+[  388.188914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  388.195610] mmc0: error -110 whilst initialising SD card
+[  389.268485] mmc0: host does not support reading read-only switch, assuming write-enable
+[  389.276924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  389.283483] mmc0: error -110 whilst initialising SD card
+[  390.356479] mmc0: host does not support reading read-only switch, assuming write-enable
+[  390.364917] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  390.371365] mmc0: error -110 whilst initialising SD card
+[  391.444489] mmc0: host does not support reading read-only switch, assuming write-enable
+[  391.452924] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  391.459483] mmc0: error -110 whilst initialising SD card
+[  392.532538] mmc0: host does not support reading read-only switch, assuming write-enable
+[  392.540975] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  392.547481] mmc0: error -110 whilst initialising SD card
+[  393.620548] mmc0: host does not support reading read-only switch, assuming write-enable
+[  393.628988] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  393.635556] mmc0: error -110 whilst initialising SD card
+[  394.708511] mmc0: host does not support reading read-only switch, assuming write-enable
+[  394.716952] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  394.723549] mmc0: error -110 whilst initialising SD card
+[  395.796475] mmc0: host does not support reading read-only switch, assuming write-enable
+[  395.804905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  395.811496] mmc0: error -110 whilst initialising SD card
+[  396.884511] mmc0: host does not support reading read-only switch, assuming write-enable
+[  396.892941] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  396.899472] mmc0: error -110 whilst initialising SD card
+[  397.972545] mmc0: host does not support reading read-only switch, assuming write-enable
+[  397.980987] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  397.987427] mmc0: error -110 whilst initialising SD card
+[  399.060527] mmc0: host does not support reading read-only switch, assuming write-enable
+[  399.068979] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  399.075415] mmc0: error -110 whilst initialising SD card
+[  400.148503] mmc0: host does not support reading read-only switch, assuming write-enable
+[  400.156985] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  400.163453] mmc0: error -110 whilst initialising SD card
+[  401.236494] mmc0: host does not support reading read-only switch, assuming write-enable
+[  401.244951] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  401.252347] mmc0: error -110 whilst initialising SD card
+[  402.324476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  402.332905] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  402.339372] mmc0: error -110 whilst initialising SD card
+[  403.412485] mmc0: host does not support reading read-only switch, assuming write-enable
+[  403.420915] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  403.427446] mmc0: error -110 whilst initialising SD card
+[  404.500515] mmc0: host does not support reading read-only switch, assuming write-enable
+[  404.508950] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  404.515446] mmc0: error -110 whilst initialising SD card
+[  405.588514] mmc0: host does not support reading read-only switch, assuming write-enable
+[  405.596951] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  405.603643] mmc0: error -110 whilst initialising SD card
+[  406.676511] mmc0: host does not support reading read-only switch, assuming write-enable
+[  406.684961] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  406.692206] mmc0: error -110 whilst initialising SD card
+[  407.764505] mmc0: host does not support reading read-only switch, assuming write-enable
+[  407.772946] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  407.779551] mmc0: error -110 whilst initialising SD card
+[  408.852544] mmc0: host does not support reading read-only switch, assuming write-enable
+[  408.860983] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  408.867552] mmc0: error -110 whilst initialising SD card
+[  409.940533] mmc0: host does not support reading read-only switch, assuming write-enable
+[  409.948967] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  409.955443] mmc0: error -110 whilst initialising SD card
+[  411.028491] mmc0: host does not support reading read-only switch, assuming write-enable
+[  411.036928] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  411.043385] mmc0: error -110 whilst initialising SD card
+[  412.116476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  412.124910] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  412.131359] mmc0: error -110 whilst initialising SD card
+[  413.204532] mmc0: host does not support reading read-only switch, assuming write-enable
+[  413.212966] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  413.219382] mmc0: error -110 whilst initialising SD card
+[  414.292532] mmc0: host does not support reading read-only switch, assuming write-enable
+[  414.300992] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  414.307450] mmc0: error -110 whilst initialising SD card
+[  415.380459] mmc0: host does not support reading read-only switch, assuming write-enable
+[  415.388907] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  415.395320] mmc0: error -110 whilst initialising SD card
+[  416.468451] mmc0: host does not support reading read-only switch, assuming write-enable
+[  416.476886] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  416.483347] mmc0: error -110 whilst initialising SD card
+[  417.556461] mmc0: host does not support reading read-only switch, assuming write-enable
+[  417.564898] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  417.571342] mmc0: error -110 whilst initialising SD card
+[  418.644455] mmc0: host does not support reading read-only switch, assuming write-enable
+[  418.652894] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  418.659345] mmc0: error -110 whilst initialising SD card
+[  419.732480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  419.740914] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  419.747353] mmc0: error -110 whilst initialising SD card
+[  420.820468] mmc0: host does not support reading read-only switch, assuming write-enable
+[  420.828898] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  420.835401] mmc0: error -110 whilst initialising SD card
+[  421.906989] mmc0: host does not support reading read-only switch, assuming write-enable
+[  421.915429] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  421.921890] mmc0: error -110 whilst initialising SD card
+[  422.996438] mmc0: host does not support reading read-only switch, assuming write-enable
+[  423.004875] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  423.011323] mmc0: error -110 whilst initialising SD card
+[  424.084457] mmc0: host does not support reading read-only switch, assuming write-enable
+[  424.092896] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  424.099350] mmc0: error -110 whilst initialising SD card
+[  425.172444] mmc0: host does not support reading read-only switch, assuming write-enable
+[  425.180880] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  425.187324] mmc0: error -110 whilst initialising SD card
+[  426.260493] mmc0: host does not support reading read-only switch, assuming write-enable
+[  426.268937] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  426.275408] mmc0: error -110 whilst initialising SD card
+[  427.348480] mmc0: host does not support reading read-only switch, assuming write-enable
+[  427.356944] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  427.363359] mmc0: error -110 whilst initialising SD card
+[  428.436469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  428.444904] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  428.451363] mmc0: error -110 whilst initialising SD card
+[  429.524465] mmc0: host does not support reading read-only switch, assuming write-enable
+[  429.532900] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  429.539316] mmc0: error -110 whilst initialising SD card
+[  430.612437] mmc0: host does not support reading read-only switch, assuming write-enable
+[  430.620873] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  430.627327] mmc0: error -110 whilst initialising SD card
+[  431.700428] mmc0: host does not support reading read-only switch, assuming write-enable
+[  431.708863] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  431.715356] mmc0: error -110 whilst initialising SD card
+[  432.788469] mmc0: host does not support reading read-only switch, assuming write-enable
+[  432.796908] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  432.803369] mmc0: error -110 whilst initialising SD card
+[  433.876455] mmc0: host does not support reading read-only switch, assuming write-enable
+[  433.884893] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  433.891333] mmc0: error -110 whilst initialising SD card
+[  434.964451] mmc0: host does not support reading read-only switch, assuming write-enable
+[  434.972890] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  434.979341] mmc0: error -110 whilst initialising SD card
+[  436.052463] mmc0: host does not support reading read-only switch, assuming write-enable
+[  436.060899] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  436.067343] mmc0: error -110 whilst initialising SD card
+[  437.140493] mmc0: host does not support reading read-only switch, assuming write-enable
+[  437.148940] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  437.155389] mmc0: error -110 whilst initialising SD card
+[  438.228433] mmc0: host does not support reading read-only switch, assuming write-enable
+[  438.236867] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  438.243328] mmc0: error -110 whilst initialising SD card
+[  439.316461] mmc0: host does not support reading read-only switch, assuming write-enable
+[  439.324889] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  439.331346] mmc0: error -110 whilst initialising SD card
+[  440.404470] mmc0: host does not support reading read-only switch, assuming write-enable
+[  440.412926] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  440.419357] mmc0: error -110 whilst initialising SD card
+[  441.492468] mmc0: host does not support reading read-only switch, assuming write-enable
+[  441.500898] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  441.507317] mmc0: error -110 whilst initialising SD card
+[  442.580474] mmc0: host does not support reading read-only switch, assuming write-enable
+[  442.588918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  442.595357] mmc0: error -110 whilst initialising SD card
+[  443.668491] mmc0: host does not support reading read-only switch, assuming write-enable
+[  443.676935] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  443.683372] mmc0: error -110 whilst initialising SD card
+[  444.756441] mmc0: host does not support reading read-only switch, assuming write-enable
+[  444.764872] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  444.771335] mmc0: error -110 whilst initialising SD card
+[  445.844462] mmc0: host does not support reading read-only switch, assuming write-enable
+[  445.852904] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  445.859332] mmc0: error -110 whilst initialising SD card
+[  446.932488] mmc0: host does not support reading read-only switch, assuming write-enable
+[  446.940935] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  446.947393] mmc0: error -110 whilst initialising SD card
+[  448.020478] mmc0: host does not support reading read-only switch, assuming write-enable
+[  448.028918] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  448.035362] mmc0: error -110 whilst initialising SD card
+[  449.108506] mmc0: host does not support reading read-only switch, assuming write-enable
+[  449.116954] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  449.123414] mmc0: error -110 whilst initialising SD card
+[  450.196476] mmc0: host does not support reading read-only switch, assuming write-enable
+[  450.204927] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  450.211393] mmc0: error -110 whilst initialising SD card
+[  451.284468] mmc0: host does not support reading read-only switch, assuming write-enable
+[  451.292909] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  451.299363] mmc0: error -110 whilst initialising SD card
+[  452.372470] mmc0: host does not support reading read-only switch, assuming write-enable
+[  452.380913] sunxi-mmc 1c0f000.mmc: data error, sending stop command
+[  452.387347] mmc0: error -110 whilst initialising SD card
