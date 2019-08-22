@@ -1,0 +1,16 @@
+Module                  Size  Used by
+xradio_wlan           562334  0 
+uvcvideo               75168  0 
+videobuf2_vmalloc       6058  1 uvcvideo
+videobuf2_memops        2009  1 videobuf2_vmalloc
+videobuf2_v4l2         21951  1 uvcvideo
+videobuf2_core         24478  2 uvcvideo,videobuf2_v4l2
+algif_skcipher          9956  0 
+algif_rng               2109  0 
+algif_hash              4917  0 
+af_alg                  8309  3 algif_skcipher,algif_rng,algif_hash
+sunxi_ir_rx             7805  0 
+sunxi_keyboard          5179  0 
+mali                  297352  15 
+fivm                    7878  0 
+nand                  335941  8 

@@ -1,0 +1,226 @@
+[   16.170746] read boot1 success
+[   16.176282] [NAND]do BLKREADBOOT1!
+[   16.245016] init (1): drop_caches: 1
+[   16.258945] [NAND]start BLKREADBOOT1...
+[   16.388762] read boot1 success
+[   16.392199] [NAND]do BLKREADBOOT1!
+[   16.469584] init (1): drop_caches: 1
+[   16.473637] [NAND]start BLKREADBOOT1...
+[   16.713796] read boot1 success
+[   16.717264] [NAND]do BLKREADBOOT1!
+[   16.772472] init: Starting service 'bootanim'...
+[   16.846254] init (1): drop_caches: 1
+[   16.850392] [NAND]start BLKREADBOOT1...
+[   16.974482] read boot1 success
+[   16.977916] [NAND]do BLKREADBOOT1!
+[   17.013353] init (1): drop_caches: 1
+[   17.017558] [NAND]start BLKREADBOOT1...
+[   17.140364] read boot1 success
+[   17.143799] [NAND]do BLKREADBOOT1!
+[   17.914289] type=1400 audit(23.330:46): avc: denied { read } for pid=1425 comm="mediadrmserver" name="psched" dev="proc" ino=4026531920 scontext=u:r:mediadrmserver:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   17.939049] type=1400 audit(23.330:47): avc: denied { open } for pid=1425 comm="mediadrmserver" path="/proc/1425/net/psched" dev="proc" ino=4026531920 scontext=u:r:mediadrmserver:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   17.963389] type=1400 audit(23.330:48): avc: denied { getattr } for pid=1425 comm="mediadrmserver" path="/proc/1425/net/psched" dev="proc" ino=4026531920 scontext=u:r:mediadrmserver:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   40.186532] healthd: battery l=100 v=0 t=42.4 h=2 st=2 chg=a
+[   42.403909] init: write_file: Unable to write to '/config/usb_gadget/g1/UDC': No such device
+[   42.413497] init: Service 'adbd' is being killed...
+[   42.420631] init: Service 'adbd' (pid 1374) killed by signal 9
+[   42.427270] init: Service 'adbd' (pid 1374) killing any children in process group
+[   42.454827] init: Starting service 'adbd'...
+[   42.469862] read descriptors
+[   42.473094] read descriptors
+[   42.476295] read strings
+[   42.853708] miss config come from efuse!
+[   42.863126] libphy: gmac0: probed
+[   42.938888] sunxi-gmac gmac0 eth0: eth0: Type(1) PHY ID 00441400 at 0 IRQ poll (gmac0-0:00)
+[   42.960245] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   43.041067] init: sys_prop: illegal property name. Got: "net.(null)-pppoe.status"
+[   43.051467] init: Starting service 'stop_pppoe'...
+[   43.058363] init: sys_prop: illegal property name. Got: "net.(null)-pppoe.status"
+[   43.219794] init: Service 'stop_pppoe' (pid 2329) exited with status 0
+[   43.385212] ======== XRADIO WIFI OPEN ========
+[   43.391322] [XRADIO] Driver Label:XR_V02.15.41   
+[   43.396634] [XRADIO] Allocated hw_priv @ c4939360
+[   43.415480] sunxi-wlan wlan: bus_index: 1
+[   43.553576] [XRADIO] Detect SDIO card 1
+[   43.553615] sunxi-mmc sdc1: sdc set ios:clk 0Hz bm PP pm UP vdd 21 width 1 timing LEGACY(SDR12) dt B
+[   43.568752] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[   43.599703] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[   43.619950] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[   43.643844] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing SD-HS(SDR25) dt B
+[   43.654702] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 1 timing SD-HS(SDR25) dt B
+[   43.666101] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 4 timing SD-HS(SDR25) dt B
+[   43.678134] mmc1: new high speed SDIO card at address 0001
+[   43.685485] [SBUS] XRadio Device:sdio clk=50000000
+[   43.693247] [XRADIO] XRADIO_HW_REV 1.0 detected.
+[   43.938225] [XRADIO] Bootloader complete
+[   44.322534] [XRADIO] Firmware completed.
+[   44.330001] [WSM] Firmware Label:XR_C01.08.52.28 Sep  4 2017 11:38:25
+[   44.339754] [XRADIO] Firmware Startup Done.
+[   44.350350] ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+[   44.671489] init: Starting service 'p2p_supplicant'...
+[   45.103672] type=1400 audit(50.520:49): avc: denied { search } for pid=1424 comm="Binder:1424_2" name="1427" dev="proc" ino=8392 scontext=u:r:mediacodec:s0 tcontext=u:r:mediaserver:s0 tclass=dir permissive=1
+[   45.135450] type=1400 audit(50.520:50): avc: denied { read } for pid=1424 comm="Binder:1424_2" name="cmdline" dev="proc" ino=9438 scontext=u:r:mediacodec:s0 tcontext=u:r:mediaserver:s0 tclass=file permissive=1
+[   45.144158] [STA] !!!xradio_vif_setup: id=2, type=2, p2p=0
+[   45.144881] IPv6: ADDRCONF(NETDEV_UP): p2p0: link is not ready
+[   45.177504] type=1400 audit(50.520:51): avc: denied { open } for pid=1424 comm="Binder:1424_2" path="/proc/1427/cmdline" dev="proc" ino=9438 scontext=u:r:mediacodec:s0 tcontext=u:r:mediaserver:s0 tclass=file permissive=1
+[   45.551131] [STA] !!!xradio_vif_setup: id=0, type=2, p2p=0
+[   48.266071] android_work: sent uevent USB_STATE=CONNECTED
+[   48.293954] CPU Budget hotplug: cluster0 min:1 max:4
+[   48.335477] init: Starting service 'preinstall'...
+[   48.387584] type=1400 audit(53.800:52): avc: denied { read } for pid=2809 comm="installapp.sh" name="sys_info" dev="sysfs" ino=8823 scontext=u:r:installapp:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   48.411125] type=1400 audit(53.800:53): avc: denied { open } for pid=2809 comm="installapp.sh" path="/sys/class/sunxi_info/sys_info" dev="sysfs" ino=8823 scontext=u:r:installapp:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   48.413332] configfs-gadget gadget: high-speed config #1: b
+[   48.413765] android_work: sent uevent USB_STATE=CONFIGURED
+[   48.448208] type=1400 audit(53.800:54): avc: denied { getattr } for pid=2809 comm="installapp.sh" path="/system/bin/sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   48.473868] type=1400 audit(53.820:55): avc: denied { read } for pid=2809 comm="installapp.sh" path="/system/bin/sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   48.496633] type=1400 audit(53.860:56): avc: denied { getattr } for pid=2815 comm="installapp.sh" path="/system/bin/toybox" dev="nandd" ino=399 scontext=u:r:installapp:s0 tcontext=u:object_r:toolbox_exec:s0 tclass=file permissive=1
+[   48.521345] type=1400 audit(53.860:57): avc: denied { execute } for pid=2815 comm="installapp.sh" name="toybox" dev="nandd" ino=399 scontext=u:r:installapp:s0 tcontext=u:object_r:toolbox_exec:s0 tclass=file permissive=1
+[   48.544305] type=1400 audit(53.860:58): avc: denied { read open } for pid=2815 comm="installapp.sh" path="/system/bin/toybox" dev="nandd" ino=399 scontext=u:r:installapp:s0 tcontext=u:object_r:toolbox_exec:s0 tclass=file permissive=1
+[   48.573952] type=1400 audit(53.860:59): avc: denied { execute_no_trans } for pid=2815 comm="installapp.sh" path="/system/bin/toybox" dev="nandd" ino=399 scontext=u:r:installapp:s0 tcontext=u:object_r:toolbox_exec:s0 tclass=file permissive=1
+[   48.669576] type=1400 audit(53.860:60): avc: denied { read } for pid=2815 comm="find" name="sys_info" dev="sysfs" ino=8823 scontext=u:r:installapp:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   48.696519] type=1400 audit(53.860:61): avc: denied { open } for pid=2815 comm="find" path="/sys/class/sunxi_info/sys_info" dev="sysfs" ino=8823 scontext=u:r:installapp:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   48.727744] type=1400 audit(53.900:62): avc: denied { execute_no_trans } for pid=2817 comm="installapp.sh" path="/system/bin/grep" dev="nandd" ino=208 scontext=u:r:installapp:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   48.784422] type=1400 audit(54.090:63): avc: denied { read } for pid=2815 comm="find" name="preinstall" dev="nandd" ino=1632 scontext=u:r:installapp:s0 tcontext=u:object_r:system_file:s0 tclass=dir permissive=1
+[   48.809907] type=1400 audit(54.090:64): avc: denied { open } for pid=2815 comm="find" path="/system/preinstall" dev="nandd" ino=1632 scontext=u:r:installapp:s0 tcontext=u:object_r:system_file:s0 tclass=dir permissive=1
+[   48.835334] type=1400 audit(54.180:65): avc: denied { execute } for pid=2831 comm="installapp.sh" name="sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   48.860120] type=1400 audit(54.180:66): avc: denied { open } for pid=2831 comm="installapp.sh" path="/system/bin/sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   48.882814] type=1400 audit(54.210:67): avc: denied { getattr } for pid=2831 comm="am" path="/system/bin/app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   48.905955] type=1400 audit(54.210:68): avc: denied { execute } for pid=2831 comm="am" name="app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   48.928960] type=1400 audit(54.210:69): avc: denied { read open } for pid=2831 comm="am" path="/system/bin/app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   48.952105] type=1400 audit(54.210:70): avc: denied { execute_no_trans } for pid=2831 comm="am" path="/system/bin/app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   50.239898] [STA_WRN] Freq 2432 (wsm ch: 5) prev: 3.
+[   50.245466] wlan0: authenticate with d4:28:d5:e3:ad:8f (try 1)
+[   50.280443] wlan0: authenticated
+[   50.284179] [STA_WRN] Freq 2422 (wsm ch: 3) prev: 5.
+[   50.290083] [STA_WRN] Freq 2432 (wsm ch: 5) prev: 3.
+[   50.295616] wlan0: associate with d4:28:d5:e3:ad:8f (try 1)
+[   50.318062] wlan0: RX AssocResp from d4:28:d5:e3:ad:8f (capab=0x411 status=0 aid=4)
+[   50.326672] wlan0: associated
+[   50.333208] [AP_WRN] [STA] ASSOC HTCAP 11N 58
+[   50.360165] [AP_WRN] [STA] ASSOC HTCAP 11N 58
+[   51.200055] type=1400 audit(56.620:71): avc: denied { getattr } for pid=2831 comm="app_process" path="/data/dalvik-cache/arm" dev="nandn" ino=319490 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   51.225580] type=1400 audit(56.620:72): avc: denied { getattr } for pid=2831 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   51.253148] type=1400 audit(56.620:73): avc: denied { read } for pid=2831 comm="app_process" name="system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   51.278144] type=1400 audit(56.620:74): avc: denied { open } for pid=2831 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   51.305010] type=1400 audit(56.620:75): avc: denied { lock } for pid=2831 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   51.331852] type=1400 audit(56.620:76): avc: denied { read } for pid=2831 comm="app_process" name="system@framework@boot.oat" dev="nandn" ino=319491 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=lnk_file permissive=1
+[   51.356900] type=1400 audit(56.620:77): avc: denied { getattr } for pid=2831 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.oat" dev="nandn" ino=319491 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=lnk_file permissive=1
+[   52.026459] type=1400 audit(57.440:78): avc: denied { execmem } for pid=2831 comm="main" scontext=u:r:installapp:s0 tcontext=u:r:installapp:s0 tclass=process permissive=1
+[   52.046023] type=1400 audit(57.440:79): avc: denied { execute } for pid=2831 comm="main" path="/dev/ashmem" dev="tmpfs" ino=6692 scontext=u:r:installapp:s0 tcontext=u:object_r:ashmem_device:s0 tclass=chr_file permissive=1
+[   52.072053] type=1400 audit(57.440:80): avc: denied { execute } for pid=2831 comm="main" path=2F6465762F6173686D656D2F64616C76696B2D6A69742D636F64652D6361636865202864656C6574656429 dev="tmpfs" ino=14145 scontext=u:r:installapp:s0 tcontext=u:object_r:installapp_tmpfs:s0 tclass=file permissive=1
+[   52.537438] type=1400 audit(57.950:81): avc: denied { read } for pid=2831 comm="main" name="ipv6_route" dev="proc" ino=4026532205 scontext=u:r:installapp:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   52.567542] type=1400 audit(57.950:82): avc: denied { open } for pid=2831 comm="main" path="/proc/2831/net/ipv6_route" dev="proc" ino=4026532205 scontext=u:r:installapp:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   52.591528] type=1400 audit(57.950:83): avc: denied { getattr } for pid=2831 comm="main" path="/proc/2831/net/ipv6_route" dev="proc" ino=4026532205 scontext=u:r:installapp:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   52.614950] type=1400 audit(57.980:84): avc: denied { getattr } for pid=2831 comm="main" path="/data/dalvik-cache" dev="nandn" ino=319489 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   52.639063] type=1400 audit(57.980:85): avc: denied { write } for pid=2831 comm="main" name="arm" dev="nandn" ino=319490 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   52.661033] type=1400 audit(57.980:86): avc: denied { add_name } for pid=2831 comm="main" name="system@framework@am.jar@classes.dex.flock" scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   52.684680] type=1400 audit(57.980:87): avc: denied { create } for pid=2831 comm="main" name="system@framework@am.jar@classes.dex.flock" scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   52.708165] type=1400 audit(57.980:88): avc: denied { read write open } for pid=2831 comm="main" path="/data/dalvik-cache/arm/system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   52.737396] type=1400 audit(57.980:89): avc: denied { lock } for pid=2831 comm="main" path="/data/dalvik-cache/arm/system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   52.765133] type=1400 audit(57.980:90): avc: denied { getattr } for pid=2831 comm="main" path="/data/dalvik-cache/arm/system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   52.793613] type=1400 audit(58.030:91): avc: denied { execute } for pid=2831 comm="main" path="/data/dalvik-cache/arm/system@framework@am.jar@classes.dex" dev="nandn" ino=319609 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   52.821138] type=1400 audit(58.040:92): avc: denied { remove_name } for pid=2831 comm="main" name="system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   52.848343] type=1400 audit(58.040:93): avc: denied { unlink } for pid=2831 comm="main" name="system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   53.457479] [TXRX_WRN] drop=1440, fctl=0x00d0.
+[   54.444129] type=1400 audit(59.860:94): avc: denied { call } for pid=2831 comm="main" scontext=u:r:installapp:s0 tcontext=u:r:servicemanager:s0 tclass=binder permissive=1
+[   54.464244] type=1400 audit(59.880:95): avc: denied { search } for pid=1349 comm="servicemanager" name="2831" dev="proc" ino=13870 scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=dir permissive=1
+[   54.486055] type=1400 audit(59.880:96): avc: denied { read } for pid=1349 comm="servicemanager" name="current" dev="proc" ino=14687 scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=file permissive=1
+[   54.507805] type=1400 audit(59.880:97): avc: denied { open } for pid=1349 comm="servicemanager" path="/proc/2831/attr/current" dev="proc" ino=14687 scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=file permissive=1
+[   54.531273] type=1400 audit(59.880:98): avc: denied { getattr } for pid=1349 comm="servicemanager" scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=process permissive=1
+[   54.929410] CPU1: shutdown
+[   56.545103] mtp_open
+[   57.672343] type=1400 audit(1560064309.588:99): avc: denied { execute_no_trans } for pid=3265 comm="installapp.sh" path="/system/bin/am" dev="nandd" ino=123 scontext=u:r:installapp:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   57.703788] type=1400 audit(1560064309.588:100): avc: denied { execute } for pid=3265 comm="installapp.sh" name="sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   57.732602] type=1400 audit(1560064309.588:101): avc: denied { read open } for pid=3265 comm="installapp.sh" path="/system/bin/sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   57.768882] type=1400 audit(1560064309.688:102): avc: denied { read } for pid=3265 comm="am" name="sys_info" dev="sysfs" ino=8823 scontext=u:r:installapp:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   57.791204] type=1400 audit(1560064309.688:103): avc: denied { open } for pid=3265 comm="am" path="/sys/class/sunxi_info/sys_info" dev="sysfs" ino=8823 scontext=u:r:installapp:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   57.815354] type=1400 audit(1560064309.698:104): avc: denied { getattr } for pid=3265 comm="am" path="/system/bin/sh" dev="nandd" ino=365 scontext=u:r:installapp:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   57.838632] type=1400 audit(1560064309.728:105): avc: denied { getattr } for pid=3265 comm="am" path="/system/bin/app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   57.870195] type=1400 audit(1560064309.728:106): avc: denied { execute } for pid=3265 comm="am" name="app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   57.893939] type=1400 audit(1560064309.728:107): avc: denied { read open } for pid=3265 comm="am" path="/system/bin/app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   57.918105] type=1400 audit(1560064309.728:108): avc: denied { execute_no_trans } for pid=3265 comm="am" path="/system/bin/app_process32" dev="nandd" ino=125 scontext=u:r:installapp:s0 tcontext=u:object_r:zygote_exec:s0 tclass=file permissive=1
+[   59.959853] type=1400 audit(1560064311.878:109): avc: denied { getattr } for pid=3265 comm="app_process" path="/data/dalvik-cache/arm" dev="nandn" ino=319490 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   59.986112] type=1400 audit(1560064311.888:110): avc: denied { getattr } for pid=3265 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.014285] type=1400 audit(1560064311.888:111): avc: denied { read } for pid=3265 comm="app_process" name="system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.039757] type=1400 audit(1560064311.888:112): avc: denied { open } for pid=3265 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.067611] type=1400 audit(1560064311.888:113): avc: denied { lock } for pid=3265 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.art" dev="nandn" ino=319504 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.095469] type=1400 audit(1560064311.888:114): avc: denied { read } for pid=3265 comm="app_process" name="system@framework@boot.oat" dev="nandn" ino=319491 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=lnk_file permissive=1
+[   60.121401] type=1400 audit(1560064311.888:115): avc: denied { getattr } for pid=3265 comm="app_process" path="/data/dalvik-cache/arm/system@framework@boot.oat" dev="nandn" ino=319491 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=lnk_file permissive=1
+[   60.152505] type=1400 audit(1560064312.018:116): avc: denied { execmem } for pid=3265 comm="main" scontext=u:r:installapp:s0 tcontext=u:r:installapp:s0 tclass=process permissive=1
+[   60.170864] type=1400 audit(1560064312.018:117): avc: denied { execute } for pid=3265 comm="main" path="/dev/ashmem" dev="tmpfs" ino=6692 scontext=u:r:installapp:s0 tcontext=u:object_r:ashmem_device:s0 tclass=chr_file permissive=1
+[   60.194050] type=1400 audit(1560064312.018:118): avc: denied { execute } for pid=3265 comm="main" path=2F6465762F6173686D656D2F64616C76696B2D6A69742D636F64652D6361636865202864656C6574656429 dev="tmpfs" ino=12164 scontext=u:r:installapp:s0 tcontext=u:object_r:installapp_tmpfs:s0 tclass=file permissive=1
+[   60.224271] type=1400 audit(1560064312.078:119): avc: denied { read } for pid=3265 comm="main" name="ipv6_route" dev="proc" ino=4026532205 scontext=u:r:installapp:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   60.246760] type=1400 audit(1560064312.078:120): avc: denied { open } for pid=3265 comm="main" path="/proc/3265/net/ipv6_route" dev="proc" ino=4026532205 scontext=u:r:installapp:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   60.270632] type=1400 audit(1560064312.078:121): avc: denied { getattr } for pid=3265 comm="main" path="/proc/3265/net/ipv6_route" dev="proc" ino=4026532205 scontext=u:r:installapp:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[   60.294788] type=1400 audit(1560064312.078:122): avc: denied { write } for pid=3265 comm="main" name="arm" dev="nandn" ino=319490 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   60.317448] type=1400 audit(1560064312.078:123): avc: denied { add_name } for pid=3265 comm="main" name="system@framework@am.jar@classes.dex.flock" scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   60.341869] type=1400 audit(1560064312.078:124): avc: denied { create } for pid=3265 comm="main" name="system@framework@am.jar@classes.dex.flock" scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.366373] type=1400 audit(1560064312.078:125): avc: denied { write } for pid=3265 comm="main" path="/data/dalvik-cache/arm/system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.395047] type=1400 audit(1560064312.078:126): avc: denied { execute } for pid=3265 comm="main" path="/data/dalvik-cache/arm/system@framework@am.jar@classes.dex" dev="nandn" ino=319609 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   60.423390] type=1400 audit(1560064312.098:127): avc: denied { remove_name } for pid=3265 comm="main" name="system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=1
+[   60.450377] type=1400 audit(1560064312.098:128): avc: denied { unlink } for pid=3265 comm="main" name="system@framework@am.jar@classes.dex.flock" dev="nandn" ino=319550 scontext=u:r:installapp:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=1
+[   61.097769] type=1400 audit(1560064313.018:129): avc: denied { search } for pid=1349 comm="servicemanager" name="3265" dev="proc" ino=14823 scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=dir permissive=1
+[   61.120734] type=1400 audit(1560064313.018:130): avc: denied { read } for pid=1349 comm="servicemanager" name="current" dev="proc" ino=13015 scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=file permissive=1
+[   61.144283] type=1400 audit(1560064313.018:131): avc: denied { open } for pid=1349 comm="servicemanager" path="/proc/3265/attr/current" dev="proc" ino=13015 scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=file permissive=1
+[   61.168820] type=1400 audit(1560064313.018:132): avc: denied { getattr } for pid=1349 comm="servicemanager" scontext=u:r:servicemanager:s0 tcontext=u:r:installapp:s0 tclass=process permissive=1
+[   61.190468] type=1400 audit(1560064313.118:133): avc: denied { getattr } for pid=2809 comm="installapp.sh" path="/data/local/symbol_thirdpart_apks_installed" dev="nandn" ino=65603 scontext=u:r:installapp:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+[   61.217619] type=1400 audit(1560064313.118:134): avc: denied { read } for pid=3389 comm="installapp.sh" name="apks_installed_tcnt" dev="nandn" ino=65604 scontext=u:r:installapp:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+[   61.242911] type=1400 audit(1560064313.118:135): avc: denied { open } for pid=3389 comm="installapp.sh" path="/data/local/apks_installed_tcnt" dev="nandn" ino=65604 scontext=u:r:installapp:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+[   61.274313] init: Service 'preinstall' (pid 2809) exited with status 0
+[   62.355100] type=1400 audit(1560064314.278:136): avc: denied { read } for pid=3440 comm="su" name="/" dev="selinuxfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
+[   62.378543] type=1400 audit(1560064314.278:137): avc: denied { connectto } for pid=3440 comm="su" path=0065752E636861696E666972652E73757065727375 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[   62.403746] type=1400 audit(1560064314.278:138): avc: denied { sys_ptrace } for pid=1335 comm="su" capability=19 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[   62.484415] type=1400 audit(1560064314.408:139): avc: denied { execute_no_trans } for pid=3452 comm="su" path="/tmp-mksh/tmp-mksh" dev="rootfs" ino=7937 scontext=u:r:init:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[   67.190295] CPU2: shutdown
+[   68.553688] binder: 2351:2351 transaction failed 29189, size 88-0
+[   69.114405] init: Service 'bootanim' (pid 1577) exited with status 0
+[   69.589470] CPU3: shutdown
+[   78.160309] init: Starting service 'clear-bcb'...
+[   79.022219] type=1400 audit(1560064330.948:140): avc: denied { search } for pid=4050 comm="Binder:4050_2" name="1344" dev="proc" ino=13939 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=dir permissive=1
+[   79.044821] type=1400 audit(1560064330.948:141): avc: denied { read } for pid=4050 comm="Binder:4050_2" name="stat" dev="proc" ino=18219 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=file permissive=1
+[   79.067080] type=1400 audit(1560064330.948:142): avc: denied { open } for pid=4050 comm="Binder:4050_2" path="/proc/1344/stat" dev="proc" ino=18219 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=file permissive=1
+[   79.090578] type=1400 audit(1560064330.948:143): avc: denied { read } for pid=4050 comm="Binder:4050_2" name="/" dev="tmpfs" ino=6558 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[   79.113687] type=1400 audit(1560064330.948:144): avc: denied { open } for pid=4050 comm="Binder:4050_2" path="/dev" dev="tmpfs" ino=6558 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[   79.149071] type=1400 audit(1560064331.068:145): avc: granted { write } for pid=4153 comm="uncrypt" name="nandf" dev="tmpfs" ino=6797 scontext=u:r:uncrypt:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+[   79.171296] type=1400 audit(1560064331.078:146): avc: granted { write open } for pid=4153 comm="uncrypt" path="/dev/block/nandf" dev="tmpfs" ino=6797 scontext=u:r:uncrypt:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+[   79.176820] init: Service 'clear-bcb' (pid 4153) exited with status 0
+[   80.809623] CPU3: shutdown
+[   83.399525] CPU2: shutdown
+[   86.574680] init: Starting service 'clear-bcb'...
+[   87.582339] type=1400 audit(1560064339.508:147): avc: granted { write } for pid=4249 comm="uncrypt" name="nandf" dev="tmpfs" ino=6797 scontext=u:r:uncrypt:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+[   87.607280] type=1400 audit(1560064339.508:148): avc: granted { write open } for pid=4249 comm="uncrypt" path="/dev/block/nandf" dev="tmpfs" ino=6797 scontext=u:r:uncrypt:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+[   87.646581] init: Service 'clear-bcb' (pid 4249) exited with status 0
+[   88.041616] init: Starting service 'clear-bcb'...
+[   89.046610] type=1400 audit(1560064340.968:149): avc: granted { write } for pid=4263 comm="uncrypt" name="nandf" dev="tmpfs" ino=6797 scontext=u:r:uncrypt:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+[   89.069246] type=1400 audit(1560064340.968:150): avc: granted { write open } for pid=4263 comm="uncrypt" path="/dev/block/nandf" dev="tmpfs" ino=6797 scontext=u:r:uncrypt:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+[   89.076162] init: Service 'clear-bcb' (pid 4263) exited with status 0
+[   89.989464] CPU3: shutdown
+[   91.789737] CPU3: shutdown
+[   91.979796] CPU2: shutdown
+[   92.189594] CPU1: shutdown
+[   96.189751] CPU1: shutdown
+[   99.989738] CPU1: shutdown
+[  104.399811] CPU1: shutdown
+[  120.148159] binder: 3855: binder_alloc_buf failed to map pages in userspace, no vma
+[  120.157523] binder: 1873:3140 transaction failed 29201, size 2092-4
+[  120.261610] binder: undelivered transaction 57201
+[  120.267323] binder: undelivered transaction 57198
+[  121.789725] CPU1: shutdown
+[  133.809958] CPU1: shutdown
+[  134.399569] CPU2: shutdown
+[  135.363346] type=1400 audit(1560064387.288:151): avc: denied { search } for pid=4389 comm="Binder:4389_1" name="1344" dev="proc" ino=13939 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=dir permissive=1
+[  135.385452] type=1400 audit(1560064387.288:152): avc: denied { read } for pid=4389 comm="Binder:4389_1" name="stat" dev="proc" ino=18219 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=file permissive=1
+[  135.407512] type=1400 audit(1560064387.288:153): avc: denied { open } for pid=4389 comm="Binder:4389_1" path="/proc/1344/stat" dev="proc" ino=18219 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=file permissive=1
+[  136.183203] CPU3: shutdown
+[  136.589400] CPU1: shutdown
+[  138.389447] CPU1: shutdown
+[  142.903043] binder: 1873:2278 transaction failed 29189, size 320-0
+[  146.189693] CPU2: shutdown
+[  146.389620] CPU1: shutdown
+[  168.580043] CPU1: shutdown
+[  189.789710] CPU1: shutdown
+[  218.579723] CPU1: shutdown
+[  223.579721] CPU1: shutdown
+[  226.589709] CPU2: shutdown
+[  226.779531] CPU3: shutdown
+[  226.979734] CPU1: shutdown
