@@ -25,8 +25,8 @@ mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "h3-dolphin-p1" -d custom
 # For Android
 ## Requirements
 * LiveSuit
-* imgRepacker
-* SuperR's Kitchen
+* [imgRepacker](https://forum.xda-developers.com/showthread.php?t=1753473)
+* [SuperR's Kitchen](https://forum.xda-developers.com/apps/superr-kitchen/kitchen-superr-s-kitchen-v1-1-50-v2-1-6-t3597434)
  
 ### Notes: Will be removed
 ### twres/landscape.xml:730: <action function="set">dd if=/etc/env.fex of=/dev/block/nandb</action>				
